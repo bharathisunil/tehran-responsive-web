@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+
+.falvour-class{
+    width: 100%;
+    min-height: 842px;
+    background-color:  #041917;
+    
+}
+.flav-heading{
+    width: 641px;
+     height: 74px;
+
+}
+.flav-head{
+    width: 100%;
+    height: 100%;
+
+}
+.flav-head h3{
+    font-family: Yeseva One;
+font-size: 64px;
+font-weight: 400;
+line-height: 73.92px;
+text-align: center;
+color: #D1B982;
+margin-top: 40px;
+
+}
+.flav-cards{
+    margin-top: 180px;
+    
+    
+   
+}
+.flav-card-items{
+    background: linear-gradient(180deg, #000000 0%, #001B18 100%);
+    
+   
+}
+.flav-images1{
+    width: 183.61px;
+height: 245.23px;
+margin-top: -140px;
+}
+.flav-images2{
+    width: 200.93px;
+height: 239.01px;
+margin-top: -130px;
+}
+.flav-images3{
+    width: 200.93px;
+    height: 239.01px;
+    margin-top: -130px; 
+}
+.flav-title{
+    width: 208px;
+height: 36px;
+font-family: Poppins;
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+text-align: center;margin-left: 20px;
+color:  #D1B982;
+;
+
+}
+.flav-title h5{
+    color:  #D1B982;
+}
+.flav-text{
+    width: 278px;
+height: 63px;
+
+}
+.flav-text p{
+    color: #FFFFFF;
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: center;
+margin-bottom: 10px;
+
+}
+.flav-btn{
+width: 286px;
+height: 48px;
+margin-left: -15px;
+margin-top: 20px;
+background-color:  #7C9AA0;
+
+
+}
+.flav-btn span{
+    
+    width: 121px;
+height: 54px;
+font-family: Poppins;
+font-size: 26px;
+font-weight: 600;
+line-height: 54px;
+text-align: center;
+color: #000000;
+
+
+}
+.fav-btn {
+    width: 286px;
+height: 40px;
+margin-top: 60px;
+margin-left: 480px;
+background-color: #D2BA83;
+;
+
+}
+.all-flav-btn button{
+    width: 100%;
+    height:100%
+}
+.all-flav-btn h5{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    color:#000000;
+}
+@media screen and (min-width:700),(max-width:1100px){
+    .fav-btn{
+        margin-left: 10px;
+    }
+    
+}
+@media screen and (min-width:1101),(max-width:1300px){
+    .fav-btn{
+        margin-left: -10px;
+    }
+}
+@media screen and (max-width:600px) {
+     
+.flav-head h3{
+    font-size: 40px;
+}
+}

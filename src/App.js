@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+/* The following line can be included in a src/App.scss */
+/* The following line can be included in a src/App.scss */
+//import Navbar from './Navbar';
 
-function App() {
+  /* The following line can be included in your src/index.js or App.js file */
+  import {
+    Navbar,
+    Footer,
+    Gallery,
+    NavBar,
+    Flavours,
+    Reservation,
+    Welcome,WelcomePage
+  } from "./components";
+  
+import 'bootstrap/dist/css/bootstrap.min.css';
+const App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar></NavBar>
+      <Navbar/>
+      <WelcomePage></WelcomePage>
+      {/*<Welcome></Welcome>*/}
+      <Flavours></Flavours>
+      <Gallery></Gallery>
+     
+      {/*<Reservation></Reservation>
+  <Footer></Footer>*/}
+       
     </div>
   );
-}
+};
 
 export default App;
