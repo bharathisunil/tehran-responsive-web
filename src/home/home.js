@@ -19,9 +19,55 @@ import Brand2 from "../assets/brand02.png";
 import Brand3 from "../assets/brand03.png";
 import Brand4 from "../assets/brand04.png";
 import Brand5 from "../assets/brand05.png";
+import emailjs from "@emailjs/browser";
 import "./home.scss";
+import React, { useEffect, useState, useRef } from "react";
 
 const Home = () => {
+  const form = useRef();
+  const [mobile, setMobile] = useState();
+  const [firstName, setFirstName] = useState();
+  const [lastName, setLastName] = useState();
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+  const onMobileChange = (e) => {
+    console.log("onMobileChange ", e.target.value);
+    setMobile(e.target.value);
+  };
+
+  const onFirstNameChange = (e) => {
+    console.log("onFirstNameChange ", e.target.value);
+    setFirstName(e.target.value);
+  };
+  const onLastNameChange = (e) => {
+    console.log("onLastNameChange ", e.target.value);
+    setLastName(e.target.value);
+  };
+  const onEmailChange = (e) => {
+    console.log("onEmailChange ", e.target.value);
+    setEmail(e.target.value);
+  };
+  const onPasswordChange = (e) => {
+    console.log("onPasswordChange ", e.target.value);
+    setPassword(e.target.value);
+  };
+  const sendEmail = (e) => {
+    console.log("sendEmail : ", form.current);
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_z91w1xf", "template_xr7yeq5", form.current, {
+        publicKey: "iLHcFCbqcEy0wS-h4",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <div>
       <Navbar bg="dark" data-bs-theme="dark" expand="lg" fixed="top">
@@ -226,51 +272,75 @@ const Home = () => {
             <div className="col-md-6 ps-md-5">
               <div className="py-5 position-relative z-1">
                 <h3 className="mb-5">Reservation</h3>
-                <div className="row">
-                  <div className="col-md-6 pb-3">
-                    <Form.Control
-                      size="lg"
-                      type="text"
-                      placeholder="First Name"
-                      className="w-100"
-                    />
+
+                <form ref={form} onSubmit={sendEmail}>
+                  <div className="row">
+                    <div className="col-md-6 pb-3">
+                      <Form.Control
+                        size="lg"
+                        type="text"
+                        placeholder="First Name"
+                        className="w-100"
+                        onChange={onFirstNameChange}
+                        name="first_name"
+                      />
+                    </div>
+                    <div className="col-md-6 pb-3">
+                      <Form.Control
+                        size="lg"
+                        type="text"
+                        placeholder="Last Name"
+                        className="w-100"
+                        onChange={onLastNameChange}
+                        name="last_name"
+                      />
+                    </div>
+                    <div className="col-md-12 pb-3">
+                      <Form.Control
+                        size="lg"
+                        type="text"
+                        placeholder="Email"
+                        className="w-100"
+                        onChange={onEmailChange}
+                        name="email"
+                      />
+                    </div>
+                    <div className="col-md-12 pb-3">
+                      <Form.Control
+                        size="lg"
+                        type="text"
+                        placeholder="Password"
+                        className="w-100"
+                        onChange={onPasswordChange}
+                        name="password"
+                      />
+                    </div>
+                    <div className="col-md-12 pb-3">
+                      <Form.Control
+                        size="lg"
+                        type="text"
+                        placeholder="Mobile"
+                        className="w-100"
+                        key="mobile"
+                        onChange={onMobileChange}
+                        name="mobile"
+                      />
+                    </div>
+
+                    <Button type="submit" value="Send">
+                      Sign Up
+                    </Button>
                   </div>
-                  <div className="col-md-6 pb-3">
-                    <Form.Control
-                      size="lg"
-                      type="text"
-                      placeholder="Last Name"
-                      className="w-100"
-                    />
-                  </div>
-                  <div className="col-md-12 pb-3">
-                    <Form.Control
-                      size="lg"
-                      type="text"
-                      placeholder="Email"
-                      className="w-100"
-                    />
-                  </div>
-                  <div className="col-md-12 pb-3">
-                    <Form.Control
-                      size="lg"
-                      type="text"
-                      placeholder="Password"
-                      className="w-100"
-                    />
-                  </div>
-                  <div className="col-md-12 pb-3">
-                    <Form.Control
-                      size="lg"
-                      type="text"
-                      placeholder="Mobile"
-                      className="w-100"
-                    />
-                  </div>
-                </div>
-                <Button variant="primary" className="signup-btn mt-3">
-                  Sign Up
-                </Button>
+                </form>
+                {/* <form ref={form} onSubmit={sendEmail}>
+                    <input type="text" name="first_name" />
+                    <input type="text" name="last_name" />
+                    <input type="email" name="user_email" />
+                    <input type="password" name="user_password" />
+                    <input type="phone" name="user_phone" />
+                    <input type="submit" value="Send" />
+                  </form>
+                </div> */}
               </div>
             </div>
           </div>
@@ -302,17 +372,22 @@ const Home = () => {
         </Container>
       </section>
       <footer>
-            <Container>
-                <div className="footer-menu text-center">
-                    <a href="#">HOME</a>       <a href="#">Menu</a>        <a href="#">Hookah</a>        <a href="#">Happy HoUR</a> <br></br>
-                    <a href="#">Big Party</a>        <a href="#">Book a table</a>
-                </div>
-                <div className="row align-items-center pb-5">
-                    <div className="col-md-4"></div>
-                    <div className="col-md-4 text-center pb-3 pb-md-0">Tehran © 2024 All rights reserved.</div>
-                    <div className="col-md-4 text-center text-md-end"><img src={LogoDark} alt="Logo" /></div>
-                </div>
-            </Container>
+        <Container>
+          <div className="footer-menu text-center">
+            <a href="#">HOME</a> <a href="#">Menu</a> <a href="#">Hookah</a>{" "}
+            <a href="#">Happy HoUR</a> <br></br>
+            <a href="#">Big Party</a> <a href="#">Book a table</a>
+          </div>
+          <div className="row align-items-center pb-5">
+            <div className="col-md-4"></div>
+            <div className="col-md-4 text-center pb-3 pb-md-0">
+              Tehran © 2024 All rights reserved.
+            </div>
+            <div className="col-md-4 text-center text-md-end">
+              <img src={LogoDark} alt="Logo" />
+            </div>
+          </div>
+        </Container>
       </footer>
     </div>
   );
