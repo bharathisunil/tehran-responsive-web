@@ -1,36 +1,34 @@
-import React from "react"
-/* The following line can be included in a src/App.scss */
-/* The following line can be included in a src/App.scss */
-//import Navbar from './Navbar';
-
-  /* The following line can be included in your src/index.js or App.js file */
-  import {
-    Navbar,
-    Footer,
-    Gallery,
-    NavBar,
-    Flavours,
-    Reservation,
-    Welcome,WelcomePage
-  } from "./components";
-  
-import 'bootstrap/dist/css/bootstrap.min.css';
-const App = () => {
-  
-  return (
-    <div>
-      <NavBar></NavBar>
-      <Navbar/>
-      <WelcomePage></WelcomePage>
-      {/*<Welcome></Welcome>*/}
-      <Flavours></Flavours>
-      <Gallery></Gallery>
-     
-      {/*<Reservation></Reservation>
-  <Footer></Footer>*/}
-       
-    </div>
-  );
-};
+import { Component } from "react";
+import "./App.scss";
+import Home from "./home/home";
+import {
+  BrowserRouter,
+  Routes,
+  Redirect,
+  Navigate,
+  Route,
+} from "react-router-dom";
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <BrowserRouter>
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={<Home/>}
+            ></Route>
+            <Route
+              exact
+              path="/home"
+              element={<Home/>}
+            ></Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
+    );
+  }
+}
 
 export default App;
