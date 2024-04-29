@@ -1,366 +1,373 @@
 .carousel-sec {
-    background-image: url(../assets/banner-img.png);
-    min-height: 816px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    .titles {
-        font-family: "Rozha One", serif;
-        color: #d1b982;
-        line-height: 85px;
+  background-image: url(../assets/banner-img.png);
+  min-height: 816px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .titles {
+    font-family: "Rozha One", serif;
+    color: #d1b982;
+    line-height: 85px;
+  }
+  .font1 {
+    font-size: 64px;
+  }
+  .font2 {
+    font-size: 96px;
+    span {
+      font-family: "Sawarabi Mincho", serif;
+      color: #fff;
     }
-    .font1 {
-        font-size: 64px;
-    }
-    .font2 {
-        font-size: 96px;
-        span {
-            font-family: "Sawarabi Mincho", serif;
-            color: #fff;
-        }
-    }
-    .font3 {
-        color: #fff;
-        font-size: 72px;
-    }
-    .hookah1 {
-        position: absolute;
-        bottom: 40px;
-    }
+  }
+  .font3 {
+    color: #fff;
+    font-size: 72px;
+  }
+  .hookah1 {
+    position: absolute;
+    bottom: 40px;
+  }
 }
 
 .welcome-sec {
-    background-color: #21040c;
-    h2 {
-        font-size: 64px;
-        color: #d1b982;
-        font-family: "Yeseva One", serif;
-    }
-    p {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        color: #bbbbbb;
-    }
-    .book-btn {
-        background-color: #d1b982;
-        border-color: #d1b982;
-        font-size: 20px;
-        color: #000000;
-        font-weight: 500;
-        min-width: 250px;
-        height: 60px;
-    }
-}
-
-.flavours-sec {
-    background-image: url(../assets/flavours-bg.png);
-    min-height: 816px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    h2 {
-        font-size: 64px;
-        color: #d1b982;
-        font-family: "Yeseva One", serif;
-    }
-    .flavour-box {
-        margin-top: 150px;
-        background: linear-gradient(180deg, #000000 0%, #001b18 100%);
-        .box-bg {
-            top: -120px;
-            position: relative;
-            margin-bottom: -80px;
-            padding: 0 30px;
-        }
-        .flavour-name {
-            color: #d1b982;
-            text-transform: uppercase;
-            font-size: 24px;
-            font-family: "Poppins", sans-serif;
-            font-weight: 700;
-        }
-
-        .flavour-des {
-            color: #fff;
-            font-size: 14px;
-            font-family: "Poppins", sans-serif;
-            font-weight: 400;
-        }
-        .price {
-            background-color: #7c9aa0;
-            height: 70px;
-            color: #000;
-            font-size: 36px;
-            font-family: "Poppins", sans-serif;
-            font-weight: 700;
-        }
-    }
-    .all-btn {
-        background-color: #d1b982;
-        border-color: #d1b982;
-        font-size: 20px;
-        color: #000000;
-        font-weight: 500;
-        min-width: 300px;
-        height: 60px;
-    }
-}
-
-.happy-hours-sec {
-    background-image: url(../assets/happyhour-img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-color: #21040c;
+  h2 {
+    font-size: 64px;
+    color: #d1b982;
     font-family: "Yeseva One", serif;
-    .border1 {
-        width: 380px;
-        border: 3px solid #000;
-        height: 30px;
-        border-bottom: 0;
-    }
-    .border2 {
-        width: 380px;
-        border: 3px solid #000;
-        height: 30px;
-        border-top: 0;
-    }
-    .hh-text1 {
-        font-size: 64px;
-        color: #000;
-    }
-    .hh-text2 {
-        font-size: 20px;
-        color: #000;
-        max-width: 300px;
-        display: inline-block;
-    }
-    .hh-text2::before {
-        content: "";
-        background-color: #000;
-        width: 100px;
-        height: 2px;
-        position: absolute;
-        left: -108px;
-        top: 14px;
-    }
-    .hh-text2::after {
-        content: "";
-        background-color: #000;
-        width: 100px;
-        height: 2px;
-        position: absolute;
-        top: 14px;
-        margin-left: 10px;
-    }
-    .hh-text3 {
-        font-size: 48px;
-        color: #fff;
-    }
-    .hh-text4 {
-        font-size: 24px;
-        color: #000;
-    }
-}
-
-.home-gallery-sec {
-    background-color: #21040c;
-    h2 {
-        font-size: 64px;
-        color: #d1b982;
-        font-family: "Yeseva One", serif;
-    }
-    h3 {
-        font-size: 40px;
-        color: #fff;
-        font-family: "Yeseva One", serif;
-    }
-}
-
-.reservation-sec {
-    background-color: #000;
-    background-image: url(../assets/bigparty-bg-img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    h2 {
-        font-size: 64px;
-        color: #d1b982;
-        font-family: "Yeseva One", serif;
-    }
-    .rs-text1 {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        color: #fff;
-        font-size: 32px;
-    }
-
-    p {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        color: #bbbbbb;
-        font-size: 16px;
-    }
-    h3 {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        color: #fff;
-        font-size: 36px;
-        position: relative;
-    }
-    h3::after {
-        content: "";
-        background-color: #7c9aa0;
-        width: 38px;
-        height: 3px;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-    }
-    .form-control {
-        background-color: transparent;
-        border-color: #505050;
-        border-radius: 6px;
-        color: #fff;
-        font-size: 16px;
-        height: 60px;
-    }
-    .form-control::placeholder {
-        color: #666666;
-    }
-    .signup-btn {
-        background-color: #7C9AA0;
-        border-color: #7C9AA0;
-        font-size: 20px;
-        color: #000000;
-        font-weight: 500;
-        min-width: 300px;
-        height: 60px;
-    }
-}
-
-.reservation-sec::after {
-    content: "";
-    background-color: #000;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.home-contact-sec {
-    background-color: #000;
+  }
+  p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
+    line-height: 24px;
+    color: #bbbbbb;
+  }
+  .book-btn {
+    background-color: #d1b982;
+    border-color: #d1b982;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+    min-width: 250px;
+    height: 60px;
+  }
+}
+
+.flavours-sec {
+  background-image: url(../assets/flavours-bg.png);
+  min-height: 816px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  h2 {
+    font-size: 64px;
+    color: #d1b982;
+    font-family: "Yeseva One", serif;
+  } 
+  .flavour-box {
+    margin-top: 150px;
+    background: linear-gradient(180deg, #000000 0%, #001b18 100%);
+    transition: all 0.5s ease;
+    &:hover {
+      box-shadow: rgba(#d1b982, 0.25) 0px 50px 100px -20px,
+        rgba(#d1b982, 0.3) 0px 30px 60px -30px,
+        rgba(#d1b982, 0.35) 0px -2px 6px 0px inset;
+      transition: all 0.5s ease;
+      //   box-shadow: rgba(#d1b982, 0.5) 0px 4px 12px;
+    }
+    .box-bg {
+      top: -120px;
+      position: relative;
+      margin-bottom: -80px;
+      padding: 0 30px;
+    }
+    .flavour-name {
+      color: #d1b982;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+    }
+
+    .flavour-des {
+      color: #fff;
+      font-size: 14px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+    }
+    .price {
+      background-color: #7c9aa0;
+      height: 70px;
+      color: #000;
+      font-size: 36px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+    }
+  }
+  .all-btn {
+    background-color: #d1b982;
+    border-color: #d1b982;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+    min-width: 300px;
+    height: 60px;
+  }
+}
+
+.happy-hours-sec {
+  background-image: url(../assets/happyhour-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Yeseva One", serif;
+  .border1 {
+    width: 380px;
+    border: 3px solid #000;
+    height: 30px;
+    border-bottom: 0;
+  }
+  .border2 {
+    width: 380px;
+    border: 3px solid #000;
+    height: 30px;
+    border-top: 0;
+  }
+  .hh-text1 {
+    font-size: 64px;
+    color: #000;
+  }
+  .hh-text2 {
+    font-size: 20px;
+    color: #000;
+    max-width: 300px;
+    display: inline-block;
+  }
+  .hh-text2::before {
+    content: "";
+    background-color: #000;
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    left: -108px;
+    top: 14px;
+  }
+  .hh-text2::after {
+    content: "";
+    background-color: #000;
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    top: 14px;
+    margin-left: 10px;
+  }
+  .hh-text3 {
+    font-size: 48px;
     color: #fff;
-    h2 {
-        font-size: 64px;
-        color: #d1b982;
-        font-family: "Yeseva One", serif;
-    }
-    .map {
-        background-color: #ddd;
-        height: 322px;
-    }
-    .lable {
-        color: #fff;
-    }
-    .value {
-        color: #087B6F;
-    }
+  }
+  .hh-text4 {
+    font-size: 24px;
+    color: #000;
+  }
+}
+
+.home-gallery-sec {
+  background-color: #21040c;
+  h2 {
+    font-size: 64px;
+    color: #d1b982;
+    font-family: "Yeseva One", serif;
+  }
+  h3 {
+    font-size: 40px;
+    color: #fff;
+    font-family: "Yeseva One", serif;
+  }
+}
+
+.reservation-sec {
+  background-color: #000;
+  background-image: url(../assets/bigparty-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  h2 {
+    font-size: 64px;
+    color: #d1b982;
+    font-family: "Yeseva One", serif;
+  }
+  .rs-text1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 32px;
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #bbbbbb;
+    font-size: 16px;
+  }
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 36px;
+    position: relative;
+  }
+  h3::after {
+    content: "";
+    background-color: #7c9aa0;
+    width: 38px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .form-control {
+    background-color: transparent;
+    border-color: #505050;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    height: 60px;
+  }
+  .form-control::placeholder {
+    color: #666666;
+  }
+  .signup-btn {
+    background-color: #7c9aa0;
+    border-color: #7c9aa0;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+    min-width: 300px;
+    height: 60px;
+  }
+}
+
+.reservation-sec::after {
+  content: "";
+  background-color: #000;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.home-contact-sec {
+  background-color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  h2 {
+    font-size: 64px;
+    color: #d1b982;
+    font-family: "Yeseva One", serif;
+  }
+  .map {
+    background-color: #ddd;
+    height: 322px;
+  }
+  .lable {
+    color: #fff;
+  }
+  .value {
+    color: #087b6f;
+  }
 }
 
 footer {
-    background-color: #000;
-    color: #4B4B4B;
-    .footer-menu {
-        padding-bottom: 30px;
-        a {
-            font-size: 16px;
-            color: #4B4B4B;
-            font-family: "Bungee", sans-serif;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+  background-color: #000;
+  color: #4b4b4b;
+  .footer-menu {
+    padding-bottom: 30px;
+    a {
+      font-size: 16px;
+      color: #4b4b4b;
+      font-family: "Bungee", sans-serif;
+      text-decoration: none;
+      margin: 0 10px;
     }
+  }
 }
 
 @media (max-width: 768px) {
-    .carousel-sec {
-        min-height: 416px;
-    }
-    .carousel-sec .titles {
-        line-height: 40px;
-    }
-    .carousel-sec .font1 {
-        font-size: 34px;
-    }
-    .carousel-sec .font2 {
-        font-size: 45px;
-    }
-    .carousel-sec .font3 {
-        font-size: 45px;
-    }
-    .welcome-sec {
-        padding-top: 30px;
-    }
-    .welcome-sec h2 {
-        font-size: 40px;
-    }
-    .welcome-sec .book-btn {
-        font-size: 16px;
+  .carousel-sec {
+    min-height: 416px;
+  }
+  .carousel-sec .titles {
+    line-height: 40px;
+  }
+  .carousel-sec .font1 {
+    font-size: 34px;
+  }
+  .carousel-sec .font2 {
+    font-size: 45px;
+  }
+  .carousel-sec .font3 {
+    font-size: 45px;
+  }
+  .welcome-sec {
+    padding-top: 30px;
+  }
+  .welcome-sec h2 {
+    font-size: 40px;
+  }
+  .welcome-sec .book-btn {
+    font-size: 16px;
     min-width: 150px;
     height: 50px;
-    }
+  }
 
-    .flavours-sec h2 {
-        font-size: 40px;
-    }
-    .flavours-sec .flavour-box .price {
-        font-size: 20px;
-        height: 50px;
-    }
-    .flavours-sec .all-btn {
-        font-size: 16px;
-        height: 50px;
-    }
-    .happy-hours-sec .hh-text1 {
-        font-size: 54px;
-    }
-    .home-gallery-sec h2 {
-        font-size: 40px;
-    }
+  .flavours-sec h2 {
+    font-size: 40px;
+  }
+  .flavours-sec .flavour-box .price {
+    font-size: 20px;
+    height: 50px;
+  }
+  .flavours-sec .all-btn {
+    font-size: 16px;
+    height: 50px;
+  }
+  .happy-hours-sec .hh-text1 {
+    font-size: 54px;
+  }
+  .home-gallery-sec h2 {
+    font-size: 40px;
+  }
 
-    .reservation-sec::after {
-        content: "";
-        background-color: #000;
-        width: 100%;
-        height: auto;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        bottom: 0;
-    }
-    .reservation-sec h2 {
-        font-size: 40px;
-    }
-    .reservation-sec .rs-text1 {
-        font-size: 20px;
-    }
-    .reservation-sec h3 {
-        font-size: 24px;
-    }
-    .reservation-sec .signup-btn {
-        font-size: 16px;
+  .reservation-sec::after {
+    content: "";
+    background-color: #000;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    bottom: 0;
+  }
+  .reservation-sec h2 {
+    font-size: 40px;
+  }
+  .reservation-sec .rs-text1 {
+    font-size: 20px;
+  }
+  .reservation-sec h3 {
+    font-size: 24px;
+  }
+  .reservation-sec .signup-btn {
+    font-size: 16px;
     min-width: 150px;
     height: 50px;
-    }
-    .home-contact-sec h2 {
-        font-size: 40px;
-    }
-
+  }
+  .home-contact-sec h2 {
+    font-size: 40px;
+  }
 }

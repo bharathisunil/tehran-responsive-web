@@ -103,7 +103,11 @@ const Home = () => {
       </Navbar>
       <section className="carousel-sec d-flex justify-content-center align-items-center position-relative">
         <Container>
-          <div className="titles">
+          <div
+            className="titles"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
+          >
             <div className="font1">Indulge in</div>
             <div className="font2">
               Exotic Flavour <span>&</span>
@@ -118,7 +122,11 @@ const Home = () => {
       <section className="welcome-sec">
         <Container>
           <div className="row align-items-center">
-            <div className="col-md-6">
+            <div
+              className="col-md-6"
+              data-aos="fade-right"
+              data-aos-duration="2500"
+            >
               <h2>Welcome to Tehran hookah lounge</h2>
               <p>
                 Quisque arcu dui, ornare a lacus ac, dignissim bibendum tellus.
@@ -136,7 +144,11 @@ const Home = () => {
                 Book a Table
               </Button>
             </div>
-            <div className="col-md-6">
+            <div
+              className="col-md-6"
+              data-aos="fade-left"
+              data-aos-duration="2500"
+            >
               <img src={WelcomeImg} alt="Logo" className="mw-100" />
             </div>
           </div>
@@ -144,8 +156,19 @@ const Home = () => {
       </section>
       <section className="flavours-sec py-5">
         <Container>
-          <h2 className="text-center pb-3">Hookh Flavours</h2>
-          <div className="row">
+          <h2
+            className="text-center pb-3"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            Hookh Flavours
+          </h2>
+          <div
+            className="row"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-offset="300"
+          >
             <div className="col-md-4">
               <div className="flavour-box text-center">
                 <div className="box-bg">
@@ -193,14 +216,25 @@ const Home = () => {
             </div>
           </div>
           <div className="text-center mt-5">
-            <Button variant="primary" className="all-btn     mt-3">
+            <Button
+              variant="primary"
+              className="all-btn mt-3"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              data-aos-offset="100"
+            >
               All Flavours
             </Button>
           </div>
         </Container>
       </section>
       <section className="happy-hours-sec py-5">
-        <div className="text-center">
+        <div
+          className="text-center"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          data-aos-offset="100"
+        >
           <div className="border1 d-inline-block"></div>
           <div className="hh-text1">HAPPY HOURS</div>
           <div className="hh-text2 position-relative">SISHA AT</div>
@@ -211,16 +245,30 @@ const Home = () => {
       </section>
       <section className="home-gallery-sec py-5">
         <Container>
-          <h2 className="text-center pb-4">Hookah Gallery</h2>
+          <h2
+            className="text-center pb-4"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            Hookah Gallery
+          </h2>
           <div className="row mb-5">
-            <div className="col-md-4">
+            <div
+              className="col-md-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <img
                 src={Gallery1}
                 alt="Gallery"
                 className="w-100 mb-4 mb-md-0"
               />
             </div>
-            <div className="col-md-4">
+            <div
+              className="col-md-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <img
                 src={Gallery2}
                 alt="Gallery"
@@ -228,12 +276,30 @@ const Home = () => {
               />
             </div>
             <div className="col-md-4">
-              <img src={Gallery3} alt="Gallery" className="w-100 mb-4" />
-              <img src={Gallery4} alt="Gallery" className="w-100" />
+              <img
+                src={Gallery3}
+                alt="Gallery"
+                className="w-100 mb-4"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              />
+              <img
+                src={Gallery4}
+                alt="Gallery"
+                className="w-100"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              />
             </div>
           </div>
-          <h3 className="text-center pb-4">Brands we carry</h3>
-          <div className="row">
+          <h3
+            className="text-center pb-4"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            Brands we carry
+          </h3>
+          <div className="row" data-aos="fade-up" data-aos-duration="1500">
             <div className="col-6 col-md">
               <img src={Brand1} alt="Brand" className="w-100" />
             </div>
@@ -255,7 +321,11 @@ const Home = () => {
       <section className="reservation-sec">
         <Container>
           <div className="row align-items-center">
-            <div className="col-md-6 pe-md-5">
+            <div
+              className="col-md-6 pe-md-5"
+              data-aos="fade-right"
+              data-aos-duration="2500"
+            >
               <div className="py-5">
                 <h2 className="pb-3">Big Party</h2>
                 <div className="rs-text1 pb-2">
@@ -270,7 +340,11 @@ const Home = () => {
               </div>
             </div>
             <div className="col-md-6 ps-md-5">
-              <div className="py-5 position-relative z-1">
+              <div
+                className="py-5 position-relative z-1"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
                 <h3 className="mb-5">Reservation</h3>
 
                 <form ref={form} onSubmit={sendEmail}>
@@ -347,7 +421,7 @@ const Home = () => {
         </Container>
       </section>
       <section className="home-contact-sec py-5">
-        <Container>
+        <Container data-aos="fade-up" data-aos-duration="1500">
           <h2 className="text-center pb-5">Contact Info</h2>
           <div className="map mb-4"></div>
           <div className="row">
