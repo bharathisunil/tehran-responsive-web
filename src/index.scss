@@ -15,8 +15,8 @@ body {
 
 .navbar {
   background-color: #000000 !important;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   .form-select {
     width: 125px;
   }
@@ -27,3 +27,70 @@ body {
   }
 }
 
+.home-contact-sec {
+  background-color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  h2 {
+    font-size: 64px;
+    color: #d1b982;
+    font-family: "Yeseva One", serif;
+  }
+  .map {
+    background-color: #ddd;
+    height: 322px;
+  }
+  .lable {
+    color: #fff;
+  }
+  .value {
+    color: #087b6f;
+  }
+}
+
+footer {
+  background-color: #000;
+  color: #4b4b4b;
+  .footer-menu {
+    padding-bottom: 30px;
+    a {
+      font-size: 16px;
+      color: #4b4b4b;
+      font-family: "Bungee", sans-serif;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  }
+}
+
+.inner-banner {
+  background-size: cover;
+  background-position: center;
+  min-height: 368px;
+  color: #fff;
+  h1 {
+    font-family: "Yeseva One", serif;
+    font-size: 48px;
+  }
+  .sub-text {
+    font-family: "Yeseva One", serif;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .inner-banner {
+    min-height: auto;
+    h1 {
+      font-size: 36px;
+    }
+    .sub-text {
+      font-size: 16px;
+    }
+  }
+  .home-contact-sec h2 {
+    font-size: 40px;
+  }
+}

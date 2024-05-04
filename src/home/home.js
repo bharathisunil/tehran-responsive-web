@@ -22,6 +22,7 @@ import Brand5 from "../assets/brand05.png";
 import emailjs from "@emailjs/browser";
 import "./home.scss";
 import React, { useEffect, useState, useRef } from "react";
+import UncontrolledExample from "./UncontrolledImage";
 
 const Home = () => {
   const form = useRef();
@@ -72,7 +73,7 @@ const Home = () => {
     <div>
       <Navbar bg="dark" data-bs-theme="dark" expand="lg" fixed="top">
         <Container>
-          <Navbar.Brand href="#home" className="d-block d-sm-none ">
+          <Navbar.Brand href="#home" className="d-block d-md-block d-lg-none ">
             <img src={Logo} alt="Logo" height="40px" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -81,11 +82,11 @@ const Home = () => {
             className="justify-content-center"
           >
             <Nav className="align-items-center">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Menu</Nav.Link>
-              <Nav.Link href="#link">Hookah</Nav.Link>
+              <Nav.Link href="/home">Home</Nav.Link>
+              <Nav.Link href="/menu">Menu</Nav.Link>
+              <Nav.Link href="/hookah">Hookah</Nav.Link>
               <Nav.Link href="#link">Happy Hour</Nav.Link>
-              <img src={Logo} alt="Logo" className="d-none d-sm-block" />
+              <img src={Logo} alt="Logo" className="d-none d-md-none d-lg-block" />
               <Nav.Link href="#link">Big Party</Nav.Link>
               <Nav.Link href="#link">Book a table</Nav.Link>
               <Form.Select
@@ -101,6 +102,9 @@ const Home = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      {/* <section>
+        <UncontrolledExample></UncontrolledExample>
+      </section> */}
       <section className="carousel-sec d-flex justify-content-center align-items-center position-relative">
         <Container>
           <div

@@ -1,0 +1,119 @@
+.hokah-content-area {
+    background-color: #21040c;
+    .title {
+        font-family: "Yeseva One", serif;
+        font-size: 64px;
+        color: #087b6f;
+        line-height: 60px;
+    }
+    p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+    }
+    .escape-flavor {
+        background-image: url(../assets/hookah/hookah-img1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        min-height: 700px;
+        .title2 {
+            font-family: "Yeseva One", serif;
+            font-size: 48px;
+            color: #c54a4a;
+            line-height: 48px;
+        }
+    }
+    .title3 {
+        font-family: "Yeseva One", serif;
+        font-size: 32px;
+        color: #7C9AA0;
+    }
+    .flavour-box {
+        background-color: #350C18;
+        border: 2px solid #572030;
+        .flavour-name {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            color: #fff;
+        }
+        .price {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-size: 36px;
+            color: #BBBBBB;
+        }
+    }
+    .count {
+        color: #fff;
+        .number {
+            font-family: "Yeseva One", serif;
+            font-size: 96px;
+        }
+        .count-label {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+        }
+    }
+    .perfect-place {
+        background-color: #21040c;
+        padding: 6px;
+        border: 2px solid #6f2e40;
+        .bg-img {
+            background-image: url(../assets/menu/reserve.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 300px;
+        }
+        .book-btn {
+            background-color: #d1b982;
+            border-color: #d1b982;
+            font-size: 20px;
+            color: #000000;
+            font-weight: 500;
+            min-width: 250px;
+            height: 60px;
+        }
+        .title4 {
+            font-family: "Yeseva One", serif;
+            font-size: 64px;
+            color: #ffffff;
+            line-height: 60px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hokah-content-area .title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .hokah-content-area .escape-flavor .title2 {
+        font-size: 34px;
+        line-height: 34px;
+    }
+    .hokah-content-area .title3 {
+        font-size: 24px;
+    }
+    .hokah-content-area p {
+        font-size: 12px;
+    }
+    .hokah-content-area .count {
+        padding-bottom: 20px;
+    }
+    .hokah-content-area .count .number {
+        font-size: 60px;
+    }
+    .hokah-content-area .perfect-place .title4 {
+        font-size: 38px;
+    }
+    .hokah-content-area .perfect-place .book-btn{
+        font-size: 16px;
+        min-width: 150px;
+        height: 50px;
+    }
+}
