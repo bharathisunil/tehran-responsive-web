@@ -4,12 +4,12 @@ import img2 from "../assets/slider-img02.jpg";
 import img3 from "../assets/slider-img03.jpg";
 import img4 from "../assets/slider-img04.jpg";
 import img5 from "../assets/slider-img05.jpg";
-import "./IndividualIntervalsExample.css"
+import "./IndividualIntervalsExample.css";
 
 function IndividualIntervalsExample() {
   return (
     <section className="carousel-sec1">
-      <Carousel>
+      <Carousel controls={false} indicators={false}>
         <Carousel.Item interval={2000}>
           <img className="d-block w-100 img-size" src={img1} alt="Image One" />
           <Carousel.Caption>
