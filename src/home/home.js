@@ -22,7 +22,7 @@ import Brand5 from "../assets/brand05.png";
 import emailjs from "@emailjs/browser";
 import "./home.scss";
 import React, { useEffect, useState, useRef } from "react";
-import UncontrolledExample from "./UncontrolledImage";
+import IndividualIntervalsExample from "./IndividualIntervalsExample";
 
 const Home = () => {
   const form = useRef();
@@ -71,7 +71,7 @@ const Home = () => {
   };
   return (
     <div>
-      <Navbar bg="dark" data-bs-theme="dark" expand="lg" fixed="top">
+      <Navbar bg="dark" data-bs-theme="dark" expand="lg">
         <Container>
           <Navbar.Brand href="#home" className="d-block d-md-block d-lg-none ">
             <img src={Logo} alt="Logo" height="40px" />
@@ -86,7 +86,11 @@ const Home = () => {
               <Nav.Link href="/menu">Menu</Nav.Link>
               <Nav.Link href="/hookah">Hookah</Nav.Link>
               <Nav.Link href="#link">Happy Hour</Nav.Link>
-              <img src={Logo} alt="Logo" className="d-none d-md-none d-lg-block" />
+              <img
+                src={Logo}
+                alt="Logo"
+                className="d-none d-md-none d-lg-block"
+              />
               <Nav.Link href="#link">Big Party</Nav.Link>
               <Nav.Link href="#link">Book a table</Nav.Link>
               <Form.Select
@@ -102,10 +106,8 @@ const Home = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      {/* <section>
-        <UncontrolledExample></UncontrolledExample>
-      </section> */}
-      <section className="carousel-sec d-flex justify-content-center align-items-center position-relative">
+      <IndividualIntervalsExample />
+      {/* <section className="carousel-sec d-flex justify-content-center align-items-center position-relative">
         <Container>
           <div
             className="titles"
@@ -122,31 +124,85 @@ const Home = () => {
         <div className="hookah1">
           <img src={Hookah1} alt="Hookah1" />
         </div>
-      </section>
+      </section> */}
       <section className="welcome-sec">
         <Container>
           <div className="row align-items-center">
-            <div
-              className="col-md-6"
-              data-aos="fade-right"
-              data-aos-duration="2500"
-            >
-              <h2>Welcome to Tehran hookah lounge</h2>
-              <p>
-                Quisque arcu dui, ornare a lacus ac, dignissim bibendum tellus.
-                Integer vestibulum faucibus nulla, vel lobortis mauris pharetra
-                at. Morbi fringilla mi ut augue consectetur, sed laoreet lectus
-                iaculis. Etiam sed orci consequat, interdum arcu non, imperdiet
-                mauris. Vivamus vel laoreet arcu, non dignissim dolor.
-              </p>
-              <p>
-                Sed laoreet lectus iaculis. Etiam sed orci consequat, interdum
-                arcu non, imperdiet mauris. Vivamus vel laoreet arcu, non
-                dignissim dolor.
-              </p>
-              <Button variant="primary" className="book-btn mt-3">
-                Book a Table
-              </Button>
+            <div className="col-md-6 ps-md-5">
+              <div
+                className="py-5 position-relative z-1"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <form ref={form} onSubmit={sendEmail}>
+                  <div className="row">
+                    <div className="col-md-6 pb-3">
+                      <Form.Control
+                        size="lg"
+                        type="text"
+                        placeholder="First Name"
+                        className="w-100"
+                        onChange={onFirstNameChange}
+                        name="first_name"
+                      />
+                    </div>
+                    <div className="col-md-6 pb-3">
+                      <Form.Control
+                        size="lg"
+                        type="text"
+                        placeholder="Last Name"
+                        className="w-100"
+                        onChange={onLastNameChange}
+                        name="last_name"
+                      />
+                    </div>
+                    <div className="col-md-12 pb-3">
+                      <Form.Control
+                        size="lg"
+                        type="text"
+                        placeholder="Email"
+                        className="w-100"
+                        onChange={onEmailChange}
+                        name="email"
+                      />
+                    </div>
+                    <div className="col-md-12 pb-3">
+                      <Form.Control
+                        size="lg"
+                        type="text"
+                        placeholder="Password"
+                        className="w-100"
+                        onChange={onPasswordChange}
+                        name="password"
+                      />
+                    </div>
+                    <div className="col-md-12 pb-3">
+                      <Form.Control
+                        size="lg"
+                        type="text"
+                        placeholder="Mobile"
+                        className="w-100"
+                        key="mobile"
+                        onChange={onMobileChange}
+                        name="mobile"
+                      />
+                    </div>
+
+                    <Button type="submit" value="Send">
+                      Sign Up
+                    </Button>
+                  </div>
+                </form>
+                {/* <form ref={form} onSubmit={sendEmail}>
+                    <input type="text" name="first_name" />
+                    <input type="text" name="last_name" />
+                    <input type="email" name="user_email" />
+                    <input type="password" name="user_password" />
+                    <input type="phone" name="user_phone" />
+                    <input type="submit" value="Send" />
+                  </form>
+                </div> */}
+              </div>
             </div>
             <div
               className="col-md-6"
@@ -241,10 +297,11 @@ const Home = () => {
         >
           <div className="border1 d-inline-block"></div>
           <div className="hh-text1">HAPPY HOURS</div>
-          <div className="hh-text2 position-relative">SISHA AT</div>
-          <div className="hh-text3">Just $10</div>
+          {/* <div className="hh-text2 position-relative">SISHA AT</div> */}
+          {/* <div className="hh-text3">Just $10</div> */}
           <div className="border2 d-inline-block"></div>
-          <div className="hh-text4">Mon - Fri | 6PM - 9PM</div>
+          <div className="hh-text4">Sunday - Thursday | 6PM - 12PM</div>
+          <div className="hh-text4">Friday - Saturday | 6PM - 2AM</div>
         </div>
       </section>
       <section className="home-gallery-sec py-5">

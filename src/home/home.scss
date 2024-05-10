@@ -30,6 +30,14 @@
   }
 }
 
+.controlled-img {
+  min-height: 816px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
 .welcome-sec {
   background-color: #21040c;
   overflow: hidden;
@@ -38,20 +46,53 @@
     color: #d1b982;
     font-family: "Yeseva One", serif;
   }
+  .rs-text1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 32px;
+  }
+
   p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
     color: #bbbbbb;
+    font-size: 16px;
   }
-  .book-btn {
-    background-color: #d1b982;
-    border-color: #d1b982;
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 36px;
+    position: relative;
+  }
+  h3::after {
+    content: "";
+    background-color: #7c9aa0;
+    width: 38px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .form-control {
+    background-color: transparent;
+    border-color: #505050;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    height: 60px;
+  }
+  .form-control::placeholder {
+    color: #666666;
+  }
+  .signup-btn {
+    background-color: #7c9aa0;
+    border-color: #7c9aa0;
     font-size: 20px;
     color: #000000;
     font-weight: 500;
-    min-width: 250px;
+    min-width: 300px;
     height: 60px;
   }
 }
@@ -67,7 +108,7 @@
     font-size: 64px;
     color: #d1b982;
     font-family: "Yeseva One", serif;
-  } 
+  }
   .flavour-box {
     margin-top: 150px;
     background: linear-gradient(180deg, #000000 0%, #001b18 100%);
