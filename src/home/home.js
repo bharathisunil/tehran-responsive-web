@@ -23,6 +23,7 @@ import emailjs from "@emailjs/browser";
 import "./home.scss";
 import React, { useEffect, useState, useRef } from "react";
 import IndividualIntervalsExample from "./IndividualIntervalsExample";
+import Contact from "../components/contact/contact";
 
 const Home = () => {
   const form = useRef();
@@ -481,31 +482,7 @@ const Home = () => {
           </div>
         </Container>
       </section>
-      <section className="home-contact-sec py-5">
-        <Container data-aos="fade-up" data-aos-duration="1500">
-          <h2 className="text-center pb-5">Contact Info</h2>
-          <div className="map mb-4"></div>
-          <div className="row">
-            <div className="col-md-3">
-              <div className="lable">Hours of Operations:</div>
-              <div className="value">2 PM to 3 AM Daily</div>
-            </div>
-            <div className="col-md-3">
-              <div className="lable">Located:</div>
-              <div className="value">123 W 45th Newyork</div>
-            </div>
-            <div className="col-md-3">
-              <div className="lable">Phone:</div>
-              <div className="value">(+1) (404) 7236 423</div>
-            </div>
-            <div className="col-md-3">
-              <div className="lable">Follow Us:</div>
-              <div className="value">@tehranlounge</div>
-            </div>
-          </div>
-          <hr className="mt-5"></hr>
-        </Container>
-      </section>
+      <Contact/>
       <footer>
         <Container>
           <div className="footer-menu text-center">

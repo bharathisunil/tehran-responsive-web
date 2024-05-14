@@ -10,6 +10,7 @@ import Flavor1 from "../assets/hookah/flavor1.png";
 import Flavor2 from "../assets/hookah/flavor2.png";
 import Flavor3 from "../assets/hookah/flavor3.png";
 import "./hookah.scss";
+import Contact from "../components/contact/contact";
 
 const Hookah = () => {
   return (
@@ -189,7 +190,7 @@ const Hookah = () => {
           </div>
         </Container>
       </section>
-      <section className="home-contact-sec py-5">
+      {/* <section className="home-contact-sec py-5">
         <Container>
           <h2 className="text-center pb-5">Contact Info</h2>
           <div className="map mb-4"></div>
@@ -213,7 +214,8 @@ const Hookah = () => {
           </div>
           <hr className="mt-5"></hr>
         </Container>
-      </section>
+      </section> */}
+      <Contact/>
       <footer>
         <Container>
           <div className="footer-menu text-center">

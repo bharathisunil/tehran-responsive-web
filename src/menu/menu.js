@@ -9,6 +9,7 @@ import LogoDark from "../assets/logo-dark.svg";
 import MenuImg1 from "../assets/menu/menu-img1.png";
 import Salad from "../assets/menu/salad.png";
 import "./menu.scss";
+import Contact from "../components/contact/contact";
 
 const Menu = () => {
   return (
@@ -256,7 +257,7 @@ const Menu = () => {
           </div>
         </Container>
       </section>
-      <section className="home-contact-sec py-5">
+      {/* <section className="home-contact-sec py-5">
         <Container>
           <h2 className="text-center pb-5">Contact Info</h2>
           <div className="map mb-4"></div>
@@ -280,7 +281,8 @@ const Menu = () => {
           </div>
           <hr className="mt-5"></hr>
         </Container>
-      </section>
+      </section> */}
+      <Contact/>
       <footer>
         <Container>
           <div className="footer-menu text-center">

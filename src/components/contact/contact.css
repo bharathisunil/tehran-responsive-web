@@ -1,0 +1,24 @@
+.home-contact-sec {
+    background-color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    overflow: hidden;
+    h2 {
+      font-size: 64px;
+      color: #d1b982;
+      font-family: "Yeseva One", serif;
+    }
+    .map {
+      background-color: #ddd;
+      height: 322px;
+      width: 100%;
+    }
+    .lable {
+      color: #fff;
+    }
+    .value {
+      color: #087b6f;
+    }
+  }
