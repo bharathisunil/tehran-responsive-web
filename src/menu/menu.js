@@ -56,8 +56,10 @@ const Menu = () => {
         }}
       >
         <Container className="text-center">
-          <h1>MENU</h1>
-          <div className="sub-text">
+          <h1 data-aos="fade-down"
+            data-aos-duration="1500">MENU</h1>
+          <div className="sub-text"  data-aos="zoom-in"
+            data-aos-duration="1500">
             Experience the rich flavors of shisha tobacco in a vibrant and
             welcoming atmosphere at our hookah lounge, perfect for socializing
             and relaxation.
@@ -68,10 +70,12 @@ const Menu = () => {
         <Container className="text-center">
           <div className="row justify-content-center">
             <div className="col-md-7">
-              <div className="title pb-5">
+              <div className="title pb-5"  data-aos="fade-up"
+            data-aos-duration="1500">
                 Our Selection at Tehran hookah lounge
               </div>
-              <p>
+              <p className="pb-4"  data-aos="fade-right"
+            data-aos-duration="1500">
                 Explore our enticing hookah menu, crafted to satisfy every
                 palate. From classic flavors to exotic blends, our selection
                 promises a delightful journey into the world of shisha. Whether
@@ -83,7 +87,8 @@ const Menu = () => {
                 <img
                   src={MenuImg1}
                   alt="Our selection"
-                  className="mw-100 position-relative z-1"
+                  className="mw-100 position-relative z-1"  data-aos="zoom-in"
+                  data-aos-duration="1500"
                 />
               </div>
             </div>
@@ -92,11 +97,13 @@ const Menu = () => {
       </section>
       <section className="different-flavours pb-5">
         <Container>
-          <div className="title pb-5 text-center">
+          <div className="title pb-5 text-center" data-aos="fade-right"
+            data-aos-duration="1500">
             Try One of Our Many Different Shisha Flavours
           </div>
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade-left"
+            data-aos-duration="1500">
               <div className="pb-3">
                 <div className="flavour-name">Blue Dew</div>
                 <p>A blend of blueberry and honeydew melon</p>
@@ -114,7 +121,8 @@ const Menu = () => {
                 <p>Peach with notes of creamy, citrus and spice</p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade-right"
+            data-aos-duration="1500">
               <div className="pb-3">
                 <div className="flavour-name">Irish Peach</div>
                 <p>Peach with notes of creamy, citrus and spice</p>
@@ -135,9 +143,10 @@ const Menu = () => {
           </div>
         </Container>
       </section>
-      <section className="side-dishes-sec py-5">
+      <section className="side-dishes-sec">
         <Container>
-          <div className="reserve-table  mb-5">
+          <div className="reserve-table" data-aos="zoom-in"
+            data-aos-duration="1500">
             <div className="bg-img text-center d-flex align-items-center justify-content-center">
               <div>
                 <div className="title pb-4">Reserve a table</div>
@@ -151,15 +160,17 @@ const Menu = () => {
               </div>
             </div>
           </div>
-          <div className="row justify-content-center text-center pb-5">
+          {/* <div className="row justify-content-center text-center pb-5">
             <div className="col-md-9">
               <div className="title2">
                 Side dishes to complement your hookah flavour
               </div>
             </div>
-          </div>
-          <div className="sub-title position-relative mb-3">Salads</div>
-          <div className="row">
+          </div> */}
+          <div className="sub-title position-relative mb-3" data-aos="fade-right"
+            data-aos-duration="1500">Salads</div>
+          <div className="row" data-aos="fade-left"
+            data-aos-duration="1500">
             <div className="col-md-6">
               <div className="d-flex dish">
                 <div className="dish-img me-3">
@@ -191,8 +202,10 @@ const Menu = () => {
               </div>
             </div>
           </div>
-          <div className="sub-title position-relative mb-3">Starters</div>
-          <div className="row">
+          <div className="sub-title position-relative mb-3" data-aos="fade-right"
+            data-aos-duration="1500">Starters</div>
+          <div className="row" data-aos="fade-left"
+            data-aos-duration="1500">
             <div className="col-md-6">
               <div className="d-flex dish">
                 <div className="dish-img me-3">
@@ -222,7 +235,7 @@ const Menu = () => {
               </div>
             </div>
           </div>
-          <div className="sub-title position-relative mb-3">Mains</div>
+          {/* <div className="sub-title position-relative mb-3">Mains</div>
           <div className="row">
             <div className="col-md-6">
               <div className="d-flex dish">
@@ -254,7 +267,7 @@ const Menu = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </Container>
       </section>
       {/* <section className="home-contact-sec py-5">

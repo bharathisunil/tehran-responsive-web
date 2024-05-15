@@ -45,10 +45,16 @@
 
 .side-dishes-sec {
     background-color: #21040c;
+    background-image: url(../assets/menu/grill-menu-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 60px 0 500px 0;
     .reserve-table {
         background-color: #21040c;
         padding: 6px;
         border: 2px solid #6f2e40;
+        margin-bottom: 150px;
         .bg-img {
             background-image: url(../assets/menu/reserve.jpg);
             background-repeat: no-repeat;
