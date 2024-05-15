@@ -1,11 +1,12 @@
-.footer{
+.footer {
     width: 1512px;
     height: 1020px;
     background: #000000;
     overflow: hidden;
 
 }
-.contact h1{
+
+.contact h1 {
     width: 641px;
     height: 74px;
     padding-top: 100px;
@@ -17,78 +18,88 @@
     font-weight: 400;
     line-height: 73.92px;
     text-align: center;
-color: #D2BA83;
-        
-}
-.contact img{
-    width: 1116px;
-height: 322px;
-margin-top: 140px;
-margin-left: 175px;
-gap: 0px;
-opacity: 0px;
+    color: #D2BA83;
 
 }
-.contact-info ul{
- display: flex;
- margin-top: 80px;
- margin-left: 150px;
- gap: 180px;
+
+.contact img {
+    width: 1116px;
+    height: 322px;
+    margin-top: 140px;
+    margin-left: 175px;
+    gap: 0px;
+    opacity: 0px;
+
 }
-.text h5{
+
+.contact-info ul {
+    display: flex;
+    margin-top: 80px;
+    margin-left: 150px;
+    gap: 180px;
+}
+
+.text h5 {
     font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
     color: #FFFFFF;
-    
-}
-.text p{
-    font-family: Poppins;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
-color: #087B6F;
 
 }
-.line{
-    margin-left:150px ;
+
+.text p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #087B6F;
+
+}
+
+.line {
+    margin-left: 150px;
     border: 1px solid #4B4B4B;
     margin-right: 215px;
     margin-top: 60px;
 }
-#footer-info-2  {
-    margin-left:480px ;
-    
+
+#footer-info-2 {
+    margin-left: 480px;
+
 }
-#footer-info-2 ul{
+
+#footer-info-2 ul {
     display: flex;
 }
-#footer-info-2 ul li{
+
+#footer-info-2 ul li {
     list-style: none;
     margin-left: 40px;
     margin-top: 25px;
     font-family: Bungee;
-font-size: 16px;
-font-weight: 400;
-line-height: 20.31px;
-text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.31px;
+    text-align: center;
 
 }
-.end-content{
+
+.end-content {
     margin-left: 420px;
     display: flex;
     margin-top: 40px;
     justify-content: space-evenly;
 }
-.end-content p{
+
+.end-content p {
     margin-top: 20px;
     font-family: Poppins;
-font-size: 16px;
-font-weight: 400;
-line-height: 20.31px;
-text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.31px;
+    text-align: center;
 
 }

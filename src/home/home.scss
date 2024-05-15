@@ -40,66 +40,7 @@
 
 .welcome-sec {
   background-color: #21040c;
-  overflow: hidden;
-  h2 {
-    font-size: 64px;
-    color: #d1b982;
-    font-family: "Yeseva One", serif;
-  }
-  .rs-text1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    color: #fff;
-    font-size: 32px;
-  }
-
-  p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    color: #bbbbbb;
-    font-size: 16px;
-  }
-  h3 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    color: #fff;
-    font-size: 36px;
-    position: relative;
-  }
-  h3::after {
-    content: "";
-    background-color: #7c9aa0;
-    width: 38px;
-    height: 3px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-  .form-control {
-    background-color: transparent;
-    border-color: #505050;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 16px;
-    height: 60px;
-  }
-  .form-control::placeholder {
-    color: #666666;
-  }
-  .signup-btn {
-    background-color: #7c9aa0;
-    border-color: #7c9aa0;
-    font-size: 20px;
-    color: #000000;
-    font-weight: 500;
-    min-width: 300px;
-    height: 60px;
-  }
-}
-
-.flavours-sec {
-  background-image: url(../assets/flavours-bg.png);
-  min-height: 816px;
+  background-image: url(../assets/bookatable-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -109,49 +50,33 @@
     color: #d1b982;
     font-family: "Yeseva One", serif;
   }
-  .flavour-box {
-    margin-top: 150px;
-    background: linear-gradient(180deg, #000000 0%, #001b18 100%);
-    transition: all 0.5s ease;
-    &:hover {
-      box-shadow: rgba(#d1b982, 0.25) 0px 50px 100px -20px,
-        rgba(#d1b982, 0.3) 0px 30px 60px -30px,
-        rgba(#d1b982, 0.35) 0px -2px 6px 0px inset;
-      transition: all 0.5s ease;
-      //   box-shadow: rgba(#d1b982, 0.5) 0px 4px 12px;
-    }
-    .box-bg {
-      top: -120px;
-      position: relative;
-      margin-bottom: -80px;
-      padding: 0 30px;
-    }
-    .flavour-name {
-      color: #d1b982;
-      text-transform: uppercase;
-      font-size: 24px;
-      font-family: "Poppins", sans-serif;
-      font-weight: 700;
-    }
-
-    .flavour-des {
-      color: #fff;
-      font-size: 14px;
-      font-family: "Poppins", sans-serif;
-      font-weight: 400;
-    }
-    .price {
-      background-color: #7c9aa0;
-      height: 70px;
-      color: #000;
-      font-size: 36px;
-      font-family: "Poppins", sans-serif;
-      font-weight: 700;
-    }
+  h3 {
+    font-size: 36px;
+    color: #fff;
+    font-family: "Yeseva One", serif;
   }
-  .all-btn {
-    background-color: #d1b982;
-    border-color: #d1b982;
+  .note {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #bbbbbb;
+    font-size: 16px;
+  }
+  .form-control,
+  .form-select {
+    background-color: #000000;
+    border-color: #505050;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    height: 60px;
+  }
+  .form-control::placeholder,
+  .form-select::placeholder {
+    color: #666666;
+  }
+  .book-btn {
+    background-color: #7c9aa0;
+    border-color: #7c9aa0;
     font-size: 20px;
     color: #000000;
     font-weight: 500;
@@ -217,21 +142,6 @@
   }
 }
 
-.home-gallery-sec {
-  background-color: #21040c;
-  overflow: hidden;
-  h2 {
-    font-size: 64px;
-    color: #d1b982;
-    font-family: "Yeseva One", serif;
-  }
-  h3 {
-    font-size: 40px;
-    color: #fff;
-    font-family: "Yeseva One", serif;
-  }
-}
-
 .reservation-sec {
   background-color: #000;
   background-image: url(../assets/bigparty-bg-img.png);
@@ -285,7 +195,7 @@
   .form-control::placeholder {
     color: #666666;
   }
-  .signup-btn {
+  .reserve-btn {
     background-color: #7c9aa0;
     border-color: #7c9aa0;
     font-size: 20px;
@@ -348,6 +258,112 @@ footer {
   }
 }
 
+.home-menu {
+  background-color: #041917;
+  background-image: url(../assets/Menu-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  h2 {
+    font-size: 64px;
+    color: #d1b982;
+    font-family: "Yeseva One", serif;
+  }
+  .menu-item {
+    text-align: center;
+    padding-bottom: 20px;
+    .item-img {
+      width: 163px;
+      height: 163px;
+      border: 2px solid #6f2e40;
+      padding: 4px;
+      margin: 0 auto;
+      .img {
+        max-width: 100%;
+      }
+    }
+    .item-name {
+      font-size: 24px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      color: #fff;
+    }
+    .item-price {
+      font-size: 32px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      color: #7c9aa0;
+    }
+  }
+  .flavour-box {
+    padding: 0 50px;
+    .flavour-name {
+      color: #d1b982;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+    }
+
+    .flavour-des {
+      color: #fff;
+      font-size: 14px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+    }
+  }
+}
+
+.large-gatherings {
+  background-color: #21040c;
+  overflow: hidden;
+  color: #fff;
+  padding-bottom: 100px;
+  h3 {
+    font-size: 48px;
+    color: #c54a4a;
+    font-family: "Yeseva One", serif;
+    padding-top: 100px;
+  }
+  p,
+  .count-text {
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+  .count-number {
+    font-size: 96px;
+    color: #fff;
+    font-family: "Yeseva One", serif;
+  }
+}
+
+.followus-box {
+  border-radius: 10px;
+  background-color: #1e020a;
+  border: 3px solid #C54A4A;
+  padding: 5px;
+  font-size: 24px;
+  display: flex;
+  .border-right {
+    border-right: 1px solid #C54A4A;
+  }
+  .followus-btn {
+    background-color: #C54A4A;
+    color: #fff;
+    border: 2px solid #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    height: 60px;
+    padding: 10px 60px;
+  }
+  .tag-text {
+    color: #D1B982;
+  }
+}
+
 @media (max-width: 768px) {
   .carousel-sec {
     min-height: 416px;
@@ -368,31 +384,46 @@ footer {
     padding-top: 30px;
   }
   .welcome-sec h2 {
-    font-size: 40px;
+    font-size: 33px;
+  }
+
+  .welcome-sec h3 {
+    font-size: 24px;
   }
   .welcome-sec .book-btn {
     font-size: 16px;
     min-width: 150px;
     height: 50px;
   }
-
-  .flavours-sec h2 {
-    font-size: 40px;
+  .home-menu h2 {
+    font-size: 33px;
   }
-  .flavours-sec .flavour-box .price {
-    font-size: 20px;
-    height: 50px;
-  }
-  .flavours-sec .all-btn {
-    font-size: 16px;
-    height: 50px;
+  .happy-hours-sec .border1, .happy-hours-sec .border2 {
+    width: 300px;
   }
   .happy-hours-sec .hh-text1 {
     font-size: 54px;
   }
-  .home-gallery-sec h2 {
-    font-size: 40px;
+  .happy-hours-sec .hh-text4 {
+    font-size: 18px;
   }
+  .home-menu .menu-item .item-name {
+    font-size: 18px;
+  }
+
+  .home-menu .menu-item .item-price {
+    font-size: 24px;
+}
+.large-gatherings h3 {
+  font-size: 33px;
+  padding-top: 50px;
+}
+.large-gatherings p, .large-gatherings .count-text {
+  font-size: 16px;
+}
+.large-gatherings .count-number {
+  font-size: 66px;
+}
 
   .reservation-sec::after {
     content: "";
@@ -420,5 +451,16 @@ footer {
   }
   .home-contact-sec h2 {
     font-size: 40px;
+  }
+  .followus-box {
+    font-size: 16px;
+    display: block;
+    text-align: center;
+  }
+  .followus-box .followus-btn {
+    padding: 8px 40px;
+    font-size: 20px;
+    height: auto;
+    margin-top: 10px;
   }
 }

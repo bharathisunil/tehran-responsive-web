@@ -19,6 +19,9 @@ import Brand2 from "../assets/brand02.png";
 import Brand3 from "../assets/brand03.png";
 import Brand4 from "../assets/brand04.png";
 import Brand5 from "../assets/brand05.png";
+import MenuItem1 from "../assets/menu-item1.png";
+import InstaIcon from "../assets/insta-icon.png";
+import LargeGathering from "../assets/large-gathering-bg.png";
 import emailjs from "@emailjs/browser";
 import "./home.scss";
 import React, { useEffect, useState, useRef } from "react";
@@ -126,9 +129,18 @@ const Home = () => {
           <img src={Hookah1} alt="Hookah1" />
         </div>
       </section> */}
-      <section className="welcome-sec">
+      <section className="welcome-sec pt-5">
         <Container>
+          <h2 className="text-center">Welcome to Tehran</h2>
+          <h3 className="text-center">Book a Table</h3>
           <div className="row align-items-center">
+            <div
+              className="col-md-6"
+              data-aos="fade-left"
+              data-aos-duration="2500"
+            >
+              {/* <img src={WelcomeImg} alt="Logo" className="mw-100" /> */}
+            </div>
             <div className="col-md-6 ps-md-5">
               <div
                 className="py-5 position-relative z-1"
@@ -141,7 +153,7 @@ const Home = () => {
                       <Form.Control
                         size="lg"
                         type="text"
-                        placeholder="First Name"
+                        placeholder="Date"
                         className="w-100"
                         onChange={onFirstNameChange}
                         name="first_name"
@@ -151,7 +163,7 @@ const Home = () => {
                       <Form.Control
                         size="lg"
                         type="text"
-                        placeholder="Last Name"
+                        placeholder="Time"
                         className="w-100"
                         onChange={onLastNameChange}
                         name="last_name"
@@ -161,37 +173,41 @@ const Home = () => {
                       <Form.Control
                         size="lg"
                         type="text"
-                        placeholder="Email"
+                        placeholder="Full Name"
                         className="w-100"
                         onChange={onEmailChange}
                         name="email"
                       />
                     </div>
-                    <div className="col-md-12 pb-3">
+                    <div className="col-md-6 pb-3">
                       <Form.Control
                         size="lg"
                         type="text"
-                        placeholder="Password"
+                        placeholder="Mobile"
                         className="w-100"
                         onChange={onPasswordChange}
                         name="password"
                       />
                     </div>
-                    <div className="col-md-12 pb-3">
+                    <div className="col-md-6 pb-3">
                       <Form.Control
                         size="lg"
                         type="text"
-                        placeholder="Mobile"
+                        placeholder="No of members"
                         className="w-100"
                         key="mobile"
                         onChange={onMobileChange}
                         name="mobile"
                       />
                     </div>
-
-                    <Button type="submit" value="Send">
-                      Sign Up
-                    </Button>
+                    <div className="col-md-6 pb-3">
+                      <Button type="submit" value="Send" className="book-btn">
+                        Book a Table
+                      </Button>
+                    </div>
+                  </div>
+                  <div className="note">
+                    Note: Secure your spot for up to 8 guests
                   </div>
                 </form>
                 {/* <form ref={form} onSubmit={sendEmail}>
@@ -205,25 +221,92 @@ const Home = () => {
                 </div> */}
               </div>
             </div>
-            <div
-              className="col-md-6"
-              data-aos="fade-left"
-              data-aos-duration="2500"
-            >
-              <img src={WelcomeImg} alt="Logo" className="mw-100" />
-            </div>
           </div>
         </Container>
       </section>
-      <section className="flavours-sec py-5">
+      <section className="home-menu py-5">
         <Container>
           <h2
-            className="text-center pb-3"
+            className="text-center pb-5"
             data-aos="fade-up"
             data-aos-duration="1500"
           >
-            Hookh Flavours
+            Menu
           </h2>
+          <div className="row">
+            <div className="col-md-3">
+              <div className="menu-item">
+                <div className="item-img mb-3">
+                  <img src={MenuItem1} alt="Flavour" className="menu item" />
+                </div>
+                <div className="item-name">Vegetable samosa</div>
+                <div className="item-price">$5.00</div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="menu-item">
+                <div className="item-img mb-3">
+                  <img src={MenuItem1} alt="Flavour" className="menu item" />
+                </div>
+                <div className="item-name">Vegetable samosa</div>
+                <div className="item-price">$5.00</div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="menu-item">
+                <div className="item-img mb-3">
+                  <img src={MenuItem1} alt="Flavour" className="menu item" />
+                </div>
+                <div className="item-name">Vegetable samosa</div>
+                <div className="item-price">$5.00</div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="menu-item">
+                <div className="item-img mb-3">
+                  <img src={MenuItem1} alt="Flavour" className="menu item" />
+                </div>
+                <div className="item-name">Vegetable samosa</div>
+                <div className="item-price">$5.00</div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="menu-item">
+                <div className="item-img mb-3">
+                  <img src={MenuItem1} alt="Flavour" className="menu item" />
+                </div>
+                <div className="item-name">Vegetable samosa</div>
+                <div className="item-price">$5.00</div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="menu-item">
+                <div className="item-img mb-3">
+                  <img src={MenuItem1} alt="Flavour" className="menu item" />
+                </div>
+                <div className="item-name">Vegetable samosa</div>
+                <div className="item-price">$5.00</div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="menu-item">
+                <div className="item-img mb-3">
+                  <img src={MenuItem1} alt="Flavour" className="menu item" />
+                </div>
+                <div className="item-name">Vegetable samosa</div>
+                <div className="item-price">$5.00</div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="menu-item">
+                <div className="item-img mb-3">
+                  <img src={MenuItem1} alt="Flavour" className="menu item" />
+                </div>
+                <div className="item-name">Vegetable samosa</div>
+                <div className="item-price">$5.00</div>
+              </div>
+            </div>
+          </div>
           <div
             className="row"
             data-aos="fade-up"
@@ -232,60 +315,34 @@ const Home = () => {
           >
             <div className="col-md-4">
               <div className="flavour-box text-center">
-                <div className="box-bg">
-                  <img src={Flavour01} alt="Flavour" className="flavour-img" />
-                  <div className="flavour-name pb-3">HOOKAH</div>
-                  <div className="flavour-des">
-                    Al Fakher, Nakhla, Fumari, Vantage by Starbuzz, Tangiers,
-                    Starbuzz, Lavoo, Dark Side.
-                  </div>
-                </div>
-                <div className="price d-flex align-items-center justify-content-center">
-                  $32.99
+                <img src={Flavour01} alt="Flavour" className="flavour-img" />
+                <div className="flavour-name pb-3">HOOKAH</div>
+                <div className="flavour-des">
+                  Al Fakher, Nakhla, Fumari, Vantage by Starbuzz, Tangiers,
+                  Starbuzz, Lavoo, Dark Side.
                 </div>
               </div>
             </div>
             <div className="col-md-4">
               <div className="flavour-box text-center">
-                <div className="box-bg">
-                  <img src={Flavour02} alt="Flavour" className="flavour-img" />
-                  <div className="flavour-name pb-3">FRUIT BOWL</div>
-                  <div className="flavour-des">
-                    Try our fruit bowl hookah with Grapefruit, Orange, Apple,
-                    Pineapple, Melon.
-                  </div>
-                </div>
-                <div className="price d-flex align-items-center justify-content-center">
-                  $32.99
+                <img src={Flavour02} alt="Flavour" className="flavour-img" />
+                <div className="flavour-name pb-3">FRUIT BOWL</div>
+                <div className="flavour-des">
+                  Try our fruit bowl hookah with Grapefruit, Orange, Apple,
+                  Pineapple, Melon.
                 </div>
               </div>
             </div>
             <div className="col-md-4">
               <div className="flavour-box text-center">
-                <div className="box-bg">
-                  <img src={Flavour01} alt="Flavour" className="flavour-img" />
-                  <div className="flavour-name pb-3">ART HOOKAH </div>
-                  <div className="flavour-des">
-                    These all glass hookah are created using only the highest
-                    quality of glass.
-                  </div>
-                </div>
-                <div className="price d-flex align-items-center justify-content-center">
-                  $32.99
+                <img src={Flavour01} alt="Flavour" className="flavour-img" />
+                <div className="flavour-name pb-3">ART HOOKAH </div>
+                <div className="flavour-des">
+                  These all glass hookah are created using only the highest
+                  quality of glass.
                 </div>
               </div>
             </div>
-          </div>
-          <div className="text-center mt-5">
-            <Button
-              variant="primary"
-              className="all-btn mt-3"
-              data-aos="zoom-in"
-              data-aos-duration="1500"
-              data-aos-offset="100"
-            >
-              All Flavours
-            </Button>
           </div>
         </Container>
       </section>
@@ -305,78 +362,40 @@ const Home = () => {
           <div className="hh-text4">Friday - Saturday | 6PM - 2AM</div>
         </div>
       </section>
-      <section className="home-gallery-sec py-5">
+      <section className="large-gatherings">
         <Container>
-          <h2
-            className="text-center pb-4"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
-            Hookah Gallery
-          </h2>
-          <div className="row mb-5">
-            <div
-              className="col-md-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
-              <img
-                src={Gallery1}
-                alt="Gallery"
-                className="w-100 mb-4 mb-md-0"
-              />
+          <div className="row">
+            <div className="col-md-6"
+            data-aos="fade-right"
+            data-aos-duration="1500">
+              <h3>From large gatherings to intimate soirées</h3>
+              <p>
+                our hookah lounge is the perfect place for all your party needs
+              </p>
+              <div className="row text-center">
+                <div className="col-6">
+                  <div className="count-number">30+ </div>
+                  <div className="count-text">Shisha Gatherings </div>
+                </div>
+                <div className="col-6">
+                  <div className="count-number">15+</div>
+                  <div className="count-text">university hookah bash </div>
+                </div>
+              </div>
             </div>
-            <div
-              className="col-md-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
-              <img
-                src={Gallery2}
-                alt="Gallery"
-                className="w-100 mb-4 mb-md-0"
-              />
-            </div>
-            <div className="col-md-4">
-              <img
-                src={Gallery3}
-                alt="Gallery"
-                className="w-100 mb-4"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              />
-              <img
-                src={Gallery4}
-                alt="Gallery"
-                className="w-100"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              />
+            <div className="col-md-6 text-center">
+              <img src={LargeGathering} alt="LargeGathering" className="mw-100"></img>
             </div>
           </div>
-          <h3
-            className="text-center pb-4"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
-            Brands we carry
-          </h3>
-          <div className="row" data-aos="fade-up" data-aos-duration="1500">
-            <div className="col-6 col-md">
-              <img src={Brand1} alt="Brand" className="w-100" />
-            </div>
-            <div className="col-6 col-md">
-              <img src={Brand2} alt="Brand" className="w-100" />
-            </div>
-            <div className="col-6 col-md">
-              <img src={Brand3} alt="Brand" className="w-100" />
-            </div>
-            <div className="col-6 col-md">
-              <img src={Brand4} alt="Brand" className="w-100" />
-            </div>
-            <div className="col-6 col-md">
-              <img src={Brand5} alt="Brand" className="w-100" />
-            </div>
+          <div className="followus-box mt-5 position-relative justify-content-between align-items-center"  data-aos="fade-up"
+            data-aos-duration="1500">
+            <div className="d-flex align-items-center">
+              <div className="border-right px-3 me-3"><img src={InstaIcon} alt="Instagram"  /></div>
+              <div className="text-start">Follow us and stay up to date <span className="tag-text">@Tehranhookahlounge</span></div>
+              </div>
+              <Button type="submit" value="Send" className="followus-btn">
+              Follow Us
+                    </Button>
           </div>
         </Container>
       </section>
@@ -415,7 +434,7 @@ const Home = () => {
                       <Form.Control
                         size="lg"
                         type="text"
-                        placeholder="First Name"
+                        placeholder="Date"
                         className="w-100"
                         onChange={onFirstNameChange}
                         name="first_name"
@@ -425,10 +444,20 @@ const Home = () => {
                       <Form.Control
                         size="lg"
                         type="text"
-                        placeholder="Last Name"
+                        placeholder="Time"
                         className="w-100"
                         onChange={onLastNameChange}
                         name="last_name"
+                      />
+                    </div>
+                    <div className="col-md-12 pb-3">
+                      <Form.Control
+                        size="lg"
+                        type="text"
+                        placeholder="Full Name"
+                        className="w-100"
+                        onChange={onEmailChange}
+                        name="email"
                       />
                     </div>
                     <div className="col-md-12 pb-3">
@@ -441,31 +470,32 @@ const Home = () => {
                         name="email"
                       />
                     </div>
-                    <div className="col-md-12 pb-3">
+                    <div className="col-md-6 pb-3">
                       <Form.Control
                         size="lg"
                         type="text"
-                        placeholder="Password"
+                        placeholder="Mobile"
                         className="w-100"
                         onChange={onPasswordChange}
                         name="password"
                       />
                     </div>
-                    <div className="col-md-12 pb-3">
+                    <div className="col-md-6 pb-3">
                       <Form.Control
                         size="lg"
                         type="text"
-                        placeholder="Mobile"
+                        placeholder="No of members"
                         className="w-100"
                         key="mobile"
                         onChange={onMobileChange}
                         name="mobile"
                       />
                     </div>
-
-                    <Button type="submit" value="Send">
-                      Sign Up
+                    <div className="col-md-6 pb-3">
+                    <Button type="submit" value="Send" className="reserve-btn">
+                    Reserve
                     </Button>
+                    </div>
                   </div>
                 </form>
                 {/* <form ref={form} onSubmit={sendEmail}>
@@ -482,7 +512,7 @@ const Home = () => {
           </div>
         </Container>
       </section>
-      <Contact/>
+      <Contact />
       <footer>
         <Container>
           <div className="footer-menu text-center">

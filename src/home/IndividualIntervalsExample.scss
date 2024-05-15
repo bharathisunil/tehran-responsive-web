@@ -11,10 +11,14 @@
     background-position: center; */
     overflow: hidden;
     padding: 0%;
+    .carousel-caption {
+      bottom: 40% !important;
+    }
     .titles {
       font-family: "Rozha One", serif;
       color: #d1b982;
       line-height: 85px;
+      text-align: left;
     }
     .font1 {
       font-size: 64px;
@@ -35,3 +39,21 @@
       bottom: 40px;
     }
   }
+
+  @media (max-width: 768px) {
+    .carousel-sec1 .carousel-caption {
+      bottom: 20% !important;
+  }
+    .carousel-sec1 .titles {
+      line-height: 30px;
+    }
+    .carousel-sec1 .font1 {
+      font-size: 20px;
+    }
+    .carousel-sec1 .font2 {
+      font-size: 32px;
+    }
+    .carousel-sec1 .font3 {
+      font-size: 32px;
+    }
+   }

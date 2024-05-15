@@ -15,7 +15,7 @@ const Contact = () => {
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.4099074724772!2d-81.26533882383613!3d28.617474384763067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e76f2f58f808f1%3A0x76e03ba8126e5bfb!2s5420%20Deep%20Lake%20Rd%20Suite%201088%2C%20Oviedo%2C%20FL%2032765%2C%20USA!5e0!3m2!1sen!2sin!4v1715665187681!5m2!1sen!2sin"
                         loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="map mb-4" />
                 </div>
-                <div className="row">
+                <div className="row text-center text-md-start">
                     <div className="col-md-3">
                         <div className="lable">Hours of Operations:</div>
                         <div className="value">2 PM to 3 AM Daily</div>
