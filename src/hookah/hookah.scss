@@ -31,18 +31,20 @@
         color: #7C9AA0;
     }
     .flavour-box {
-        background-color: #350C18;
-        border: 2px solid #572030;
+        background-image: url(../assets/hookah/hookah-frame-bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
         .flavour-name {
             font-family: "Poppins", sans-serif;
             font-weight: 600;
-            font-size: 24px;
+            font-size: 20px;
             color: #fff;
         }
         .price {
             font-family: "Poppins", sans-serif;
             font-weight: 400;
-            font-size: 36px;
+            font-size: 30px;
             color: #BBBBBB;
         }
     }

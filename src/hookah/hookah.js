@@ -57,8 +57,10 @@ const Hookah = () => {
         }}
       >
         <Container className="text-center">
-          <h1>HOOKAH</h1>
-          <div className="sub-text">
+          <h1 data-aos="fade-down"
+            data-aos-duration="1500">HOOKAH</h1>
+          <div className="sub-text" data-aos="zoom-in"
+            data-aos-duration="1500">
             Experience the rich flavors of shisha tobacco in a vibrant and
             welcoming atmosphere at our hookah lounge, perfect for socializing
             and relaxation.
@@ -67,17 +69,20 @@ const Hookah = () => {
       </section>
       <section className="hokah-content-area py-5">
         <Container>
-          <div className="title pb-5 text-center">
+          <div className="title pb-5 text-center" data-aos="fade-up"
+            data-aos-duration="1500">
             Welcome to <br></br>
             Tehran hookah lounge
           </div>
-          <p className="text-center">
+          <p className="text-center" data-aos="fade-right"
+            data-aos-duration="1500">
             Welcome to our vibrant hookah lounge, where every puff is an
             experience and every moment is filled with relaxation and
             camaraderie. Nestled in the heart of [Location], our lounge offers a
             haven for hookah enthusiasts and socialites alike.
           </p>
-          <p className="text-center">
+          <p className="text-center" data-aos="fade-left"
+            data-aos-duration="1500">
             Step into our inviting space and immerse yourself in the aromas of
             our premium shisha blends, carefully curated to tantalize your
             senses. Whether you're a seasoned aficionado or new to the world of
@@ -87,7 +92,8 @@ const Hookah = () => {
           </p>
           <div className="escape-flavor row align-items-center">
             <div className="col-md-1"></div>
-            <div className="col-md-7 text-end">
+            <div className="col-md-7 text-end" data-aos="fade-right"
+            data-aos-duration="1500">
               <div className="title2">
                 Escape with flavor-filled clouds: Hookah awaits.
               </div>
@@ -100,9 +106,12 @@ const Hookah = () => {
           </div>
           <div className="row justify-content-center text-center mb-5">
             <div className="col-md-7">
-              <div className="title3">Top picked</div>
-              <div className="title pb-4">Hookah Flavours</div>
-              <p>
+              <div className="title3" data-aos="fade-down"
+            data-aos-duration="1500">Top picked</div>
+              <div className="title pb-4" data-aos="zoom-in"
+            data-aos-duration="1500">Hookah Flavours</div>
+              <p data-aos="fade-up"
+            data-aos-duration="1500">
                 Delve into a world of tantalizing flavors with our diverse range
                 of hookah blends. From timeless classics like mint and fruit
                 medley to adventurous concoctions like blueberry ice and
@@ -116,7 +125,8 @@ const Hookah = () => {
           </div>
           <div className="row mb-5">
             <div className="col-md-4 text-center pb-3">
-              <div className="flavour-box">
+              <div className="flavour-box" data-aos="zoom-in"
+            data-aos-duration="1500">
                 <div className="mb-3">
                   <img src={Flavor1} alt="Flavor" />
                 </div>
@@ -125,7 +135,8 @@ const Hookah = () => {
               </div>
             </div>
             <div className="col-md-4 text-center pb-3">
-              <div className="flavour-box">
+              <div className="flavour-box" data-aos="zoom-in"
+            data-aos-duration="1500">
                 <div className="mb-3">
                   <img src={Flavor2} alt="Flavor" />
                 </div>
@@ -134,7 +145,8 @@ const Hookah = () => {
               </div>
             </div>
             <div className="col-md-4 text-center pb-3">
-              <div className="flavour-box">
+              <div className="flavour-box" data-aos="zoom-in"
+            data-aos-duration="1500">
                 <div className="mb-3">
                   <img src={Flavor3} alt="Flavor" />
                 </div>
@@ -145,12 +157,15 @@ const Hookah = () => {
           </div>
           <div className="row justify-content-center text-center mb-5">
             <div className="col-md-7">
-              <div className="title text-center">Why Choose Us</div>
-              <div className="title3 text-center pb-5">
+              <div className="title text-center pb-3" data-aos="fade-down"
+            data-aos-duration="1500">Why Choose Us</div>
+              <div className="title3 text-center pb-5" data-aos="fade-up"
+            data-aos-duration="1500">
                 Enjoying quality time with friends is an essential component of
                 a fulfilling life
               </div>
-              <p>
+              <p data-aos="zoom-in"
+            data-aos-duration="1500">
                 Discover the ultimate hookah experience with us. Our exceptional
                 quality, diverse flavors, and top-notch service make us the
                 preferred choice for hookah enthusiasts. Explore our extensive
@@ -162,20 +177,24 @@ const Hookah = () => {
             </div>
           </div>
           <div className="row pb-5 text-center">
-            <div className="col-md-4 count">
+            <div className="col-md-4 count" data-aos="fade-right"
+            data-aos-duration="1500">
               <div className="number">30+</div>
               <div className="count-label">Food Variants</div>
             </div>
-            <div className="col-md-4 count">
+            <div className="col-md-4 count" data-aos="zoom-in"
+            data-aos-duration="1500">
               <div className="number">100+</div>
               <div className="count-label">Capacity</div>
             </div>
-            <div className="col-md-4 count">
+            <div className="col-md-4 count" data-aos="fade-left"
+            data-aos-duration="1500">
               <div className="number">Cool</div>
               <div className="count-label">Atmosphere</div>
             </div>
           </div>
-          <div className="perfect-place">
+          <div className="perfect-place mt-5" data-aos="zoom-in"
+            data-aos-duration="1500">
             <div className="bg-img text-center d-flex align-items-center justify-content-center">
               <div>
                 <div className="title4 pb-4">Perfect place for Big party</div>
