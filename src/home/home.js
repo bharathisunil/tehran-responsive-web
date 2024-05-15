@@ -75,10 +75,10 @@ const Home = () => {
   };
   return (
     <div>
-      <Navbar bg="dark" data-bs-theme="dark" expand="lg">
+       <Navbar bg="dark" data-bs-theme="dark" expand="lg">
         <Container>
           <Navbar.Brand href="#home" className="d-block d-md-block d-lg-none ">
-            <img src={Logo} alt="Logo" height="40px" />
+            <a href="/home"><img src={Logo} alt="Logo" height="40px" /></a>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
@@ -86,15 +86,17 @@ const Home = () => {
             className="justify-content-center"
           >
             <Nav className="align-items-center">
-              <Nav.Link href="/home">Home</Nav.Link>
+              {/* <Nav.Link href="/home">Home</Nav.Link> */}
               <Nav.Link href="/menu">Menu</Nav.Link>
               <Nav.Link href="/hookah">Hookah</Nav.Link>
               <Nav.Link href="#link">Happy Hour</Nav.Link>
+              <a href="/home"  className="d-none d-md-none d-lg-block">
               <img
                 src={Logo}
                 alt="Logo"
-                className="d-none d-md-none d-lg-block"
+               
               />
+              </a>
               <Nav.Link href="#link">Big Party</Nav.Link>
               <Nav.Link href="#link">Book a table</Nav.Link>
               <Form.Select
@@ -516,7 +518,7 @@ const Home = () => {
       <footer>
         <Container>
           <div className="footer-menu text-center">
-            <a href="#">HOME</a> <a href="#">Menu</a> <a href="#">Hookah</a>{" "}
+            <a href="/home">HOME</a> <a href="/menu">Menu</a> <a href="/hookah">Hookah</a>{" "}
             <a href="#">Happy HoUR</a> <br></br>
             <a href="#">Big Party</a> <a href="#">Book a table</a>
           </div>

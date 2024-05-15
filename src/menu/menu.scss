@@ -1,5 +1,6 @@
 .our-selection-sec {
     background-color: #21040c;
+    overflow: hidden;
     .title {
         font-family: "Yeseva One", serif;
         font-size: 64px;
@@ -25,6 +26,7 @@
 
 .different-flavours {
     background-color: #041917;
+    overflow: hidden;
     .title {
         color: #7c9aa0;
         font-family: "Yeseva One", serif;
@@ -50,6 +52,7 @@
     background-size: cover;
     background-position: bottom;
     padding: 60px 0 500px 0;
+    overflow: hidden;
     .reserve-table {
         background-color: #21040c;
         padding: 6px;

@@ -1,5 +1,6 @@
 .hokah-content-area {
     background-color: #21040c;
+    overflow: hidden;
     .title {
         font-family: "Yeseva One", serif;
         font-size: 64px;
@@ -117,5 +118,8 @@
         font-size: 16px;
         min-width: 150px;
         height: 50px;
+    }
+    .hokah-content-area .escape-flavor {
+        min-height: 250px;
     }
 }
