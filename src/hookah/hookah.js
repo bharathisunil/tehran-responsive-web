@@ -39,7 +39,7 @@ const Hookah = () => {
               </a>
               <Nav.Link href="#link">Big Party</Nav.Link>
               <Nav.Link href="#link">Book a table</Nav.Link>
-              <Form.Select
+              {/* <Form.Select
                 aria-label="Default select example"
                 size="sm"
                 className="ms-2"
@@ -47,7 +47,7 @@ const Hookah = () => {
                 <option>English</option>
                 <option value="1">Spanish</option>
                 <option value="2">Japanese</option>
-              </Form.Select>
+              </Form.Select> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -94,7 +94,7 @@ const Hookah = () => {
           </p>
           <div className="escape-flavor row align-items-center">
             <div className="col-md-1"></div>
-            <div className="col-md-7 text-end" data-aos="fade-right"
+            <div className="col-8 col-md-7 text-end" data-aos="fade-right"
             data-aos-duration="1500">
               <div className="title2">
                 Escape with flavor-filled clouds: Hookah awaits.

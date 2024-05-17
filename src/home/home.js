@@ -89,7 +89,7 @@ const Home = () => {
               {/* <Nav.Link href="/home">Home</Nav.Link> */}
               <Nav.Link href="/menu">Menu</Nav.Link>
               <Nav.Link href="/hookah">Hookah</Nav.Link>
-              <Nav.Link href="#link">Happy Hour</Nav.Link>
+              <Nav.Link href="/happy-hour">Happy Hour</Nav.Link>
               <a href="/home"  className="d-none d-md-none d-lg-block">
               <img
                 src={Logo}
@@ -99,7 +99,7 @@ const Home = () => {
               </a>
               <Nav.Link href="#link">Big Party</Nav.Link>
               <Nav.Link href="#link">Book a table</Nav.Link>
-              <Form.Select
+              {/* <Form.Select
                 aria-label="Default select example"
                 size="sm"
                 className="ms-2"
@@ -107,7 +107,7 @@ const Home = () => {
                 <option>English</option>
                 <option value="1">Spanish</option>
                 <option value="2">Japanese</option>
-              </Form.Select>
+              </Form.Select> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -191,16 +191,13 @@ const Home = () => {
                         name="password"
                       />
                     </div>
-                    <div className="col-md-6 pb-3">
-                      <Form.Control
-                        size="lg"
-                        type="text"
-                        placeholder="No of members"
-                        className="w-100"
-                        key="mobile"
-                        onChange={onMobileChange}
-                        name="mobile"
-                      />
+                    <div className="col-md-6 pb-3" data-bs-theme="dark">
+                      <Form.Select>
+                        <option>2</option>
+                        <option value="1">4</option>
+                        <option value="2">6</option>
+                        <option value="3">8</option>
+                      </Form.Select>
                     </div>
                     <div className="col-md-6 pb-3">
                       <Button type="submit" value="Send" className="book-btn">
@@ -236,7 +233,7 @@ const Home = () => {
             Menu
           </h2>
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-6 col-md-3">
               <div className="menu-item">
                 <div className="item-img mb-3">
                   <img src={MenuItem1} alt="Flavour" className="menu item" />
@@ -245,7 +242,7 @@ const Home = () => {
                 <div className="item-price">$5.00</div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-6 col-md-3">
               <div className="menu-item">
                 <div className="item-img mb-3">
                   <img src={MenuItem1} alt="Flavour" className="menu item" />
@@ -254,7 +251,7 @@ const Home = () => {
                 <div className="item-price">$5.00</div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-6 col-md-3">
               <div className="menu-item">
                 <div className="item-img mb-3">
                   <img src={MenuItem1} alt="Flavour" className="menu item" />
@@ -263,7 +260,7 @@ const Home = () => {
                 <div className="item-price">$5.00</div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-6 col-md-3">
               <div className="menu-item">
                 <div className="item-img mb-3">
                   <img src={MenuItem1} alt="Flavour" className="menu item" />
@@ -272,7 +269,7 @@ const Home = () => {
                 <div className="item-price">$5.00</div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-6 col-md-3">
               <div className="menu-item">
                 <div className="item-img mb-3">
                   <img src={MenuItem1} alt="Flavour" className="menu item" />
@@ -281,7 +278,7 @@ const Home = () => {
                 <div className="item-price">$5.00</div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-6 col-md-3">
               <div className="menu-item">
                 <div className="item-img mb-3">
                   <img src={MenuItem1} alt="Flavour" className="menu item" />
@@ -290,7 +287,7 @@ const Home = () => {
                 <div className="item-price">$5.00</div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-6 col-md-3">
               <div className="menu-item">
                 <div className="item-img mb-3">
                   <img src={MenuItem1} alt="Flavour" className="menu item" />
@@ -299,7 +296,7 @@ const Home = () => {
                 <div className="item-price">$5.00</div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-6 col-md-3">
               <div className="menu-item">
                 <div className="item-img mb-3">
                   <img src={MenuItem1} alt="Flavour" className="menu item" />
@@ -482,16 +479,13 @@ const Home = () => {
                         name="password"
                       />
                     </div>
-                    <div className="col-md-6 pb-3">
-                      <Form.Control
-                        size="lg"
-                        type="text"
-                        placeholder="No of members"
-                        className="w-100"
-                        key="mobile"
-                        onChange={onMobileChange}
-                        name="mobile"
-                      />
+                    <div className="col-md-6 pb-3" data-bs-theme="dark">
+                      <Form.Select>
+                        <option>10</option>
+                        <option value="1">20</option>
+                        <option value="2">30</option>
+                        <option value="3">40</option>
+                      </Form.Select>
                     </div>
                     <div className="col-md-6 pb-3">
                     <Button type="submit" value="Send" className="reserve-btn">

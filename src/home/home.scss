@@ -184,15 +184,17 @@
     left: 0;
     bottom: 0;
   }
-  .form-control {
-    background-color: transparent;
+  .form-control,
+  .form-select {
+    background-color: #000000;
     border-color: #505050;
     border-radius: 6px;
     color: #fff;
     font-size: 16px;
     height: 60px;
   }
-  .form-control::placeholder {
+  .form-control::placeholder,
+  .form-select::placeholder {
     color: #666666;
   }
   .reserve-btn {
@@ -339,31 +341,6 @@ footer {
   }
 }
 
-.followus-box {
-  border-radius: 10px;
-  background-color: #1e020a;
-  border: 3px solid #C54A4A;
-  padding: 5px;
-  font-size: 24px;
-  display: flex;
-  .border-right {
-    border-right: 1px solid #C54A4A;
-  }
-  .followus-btn {
-    background-color: #C54A4A;
-    color: #fff;
-    border: 2px solid #fff;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    height: 60px;
-    padding: 10px 60px;
-  }
-  .tag-text {
-    color: #D1B982;
-  }
-}
-
 @media (max-width: 768px) {
   .carousel-sec {
     min-height: 416px;
@@ -451,16 +428,5 @@ footer {
   }
   .home-contact-sec h2 {
     font-size: 40px;
-  }
-  .followus-box {
-    font-size: 16px;
-    display: block;
-    text-align: center;
-  }
-  .followus-box .followus-btn {
-    padding: 8px 40px;
-    font-size: 20px;
-    height: auto;
-    margin-top: 10px;
   }
 }

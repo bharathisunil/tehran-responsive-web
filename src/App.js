@@ -5,6 +5,7 @@ import "./App.scss";
 import Home from "./home/home";
 import Menu from "./menu/menu";
 import Hookah from "./hookah/hookah";
+import HappyHour from "./happy-hour/happy-hour";
 import {
   BrowserRouter,
   Routes,
@@ -40,6 +41,11 @@ class App extends Component {
               exact
               path="/hookah"
               element={<Hookah/>}
+            ></Route>
+            <Route
+              exact
+              path="/happy-hour"
+              element={<HappyHour/>}
             ></Route>
           </Routes>
         </BrowserRouter>
