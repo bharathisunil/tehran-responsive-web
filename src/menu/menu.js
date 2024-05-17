@@ -28,16 +28,12 @@ const Menu = () => {
               {/* <Nav.Link href="/home">Home</Nav.Link> */}
               <Nav.Link href="/menu">Menu</Nav.Link>
               <Nav.Link href="/hookah">Hookah</Nav.Link>
-              <Nav.Link href="#link">Happy Hour</Nav.Link>
-              <a href="/home"  className="d-none d-md-none d-lg-block">
-              <img
-                src={Logo}
-                alt="Logo"
-               
-              />
+              <Nav.Link href="/happy-hour">Happy Hour</Nav.Link>
+              <a href="/home" className="d-none d-md-none d-lg-block">
+                <img src={Logo} alt="Logo" />
               </a>
-              <Nav.Link href="#link">Big Party</Nav.Link>
-              <Nav.Link href="#link">Book a table</Nav.Link>
+              <Nav.Link href="/big-party">Big Party</Nav.Link>
+              <Nav.Link href="/book-table">Book a table</Nav.Link>
               {/* <Form.Select
                 aria-label="Default select example"
                 size="sm"
@@ -300,10 +296,10 @@ const Menu = () => {
       <Contact/>
       <footer>
         <Container>
-          <div className="footer-menu text-center">
-          <a href="/home">HOME</a> <a href="/menu">Menu</a> <a href="/hookah">Hookah</a>{" "}
-            <a href="#">Happy HoUR</a> <br></br>
-            <a href="#">Big Party</a> <a href="#">Book a table</a>
+        <div className="footer-menu text-center">
+            <a href="/home">HOME</a> <a href="/menu">Menu</a>{" "}
+            <a href="/hookah">Hookah</a> <a href="/happy-hour">Happy Hour</a> <br></br>
+            <a href="/big-party">Big Party</a> <a href="/book-table">Book a table</a>
           </div>
           <div className="row align-items-center pb-5">
             <div className="col-md-4"></div>

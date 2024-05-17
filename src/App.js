@@ -6,6 +6,7 @@ import Home from "./home/home";
 import Menu from "./menu/menu";
 import Hookah from "./hookah/hookah";
 import HappyHour from "./happy-hour/happy-hour";
+import BookTable from "./book-table/book-table";
 import {
   BrowserRouter,
   Routes,
@@ -46,6 +47,11 @@ class App extends Component {
               exact
               path="/happy-hour"
               element={<HappyHour/>}
+            ></Route>
+            <Route
+              exact
+              path="/book-table"
+              element={<BookTable/>}
             ></Route>
           </Routes>
         </BrowserRouter>
