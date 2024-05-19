@@ -201,10 +201,14 @@ const Hookah = () => {
               <div className="title2 text-center pb-5">
                 Let's Enjoy-Eat-Drink-Relax Smoke Hookah
               </div>
-              <p className="text-center">Looking for a place to unwind after a long day? Need a unique spot to celebrate with friends? Look no further than our Hookah Happy Hour. Join us and elevate your evening with a touch of exotic luxury."</p>
+              <p className="text-center">
+                Looking for a place to unwind after a long day? Need a unique
+                spot to celebrate with friends? Look no further than our Hookah
+                Happy Hour. Join us and elevate your evening with a touch of
+                exotic luxury."
+              </p>
             </div>
           </div>
-         
 
           <div
             className="perfect-place mt-5"
@@ -225,15 +229,31 @@ const Hookah = () => {
             </div>
           </div>
 
-          <div className="followus-box mt-5 position-relative justify-content-between align-items-center"  data-aos="fade-up"
-            data-aos-duration="1500">
+          <div
+            className="followus-box mt-5 position-relative justify-content-between align-items-center"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <div className="d-flex align-items-center">
-              <div className="border-right px-3 me-3"><img src={InstaIcon} alt="Instagram"  /></div>
-              <div className="text-start">Follow us and stay up to date <span className="tag-text">@Tehranhookahlounge</span></div>
+              <div className="border-right px-3 me-3">
+                <img src={InstaIcon} alt="Instagram" />
               </div>
-              <Button type="submit" value="Send" className="followus-btn">
+              <div className="text-start">
+                Follow us and stay up to date{" "}
+                <span className="tag-text">@Tehranhookahlounge</span>
+              </div>
+            </div>
+            {/* <Button type="submit" value="Send" className="followus-btn">
               Follow Us
-                    </Button>
+            </Button> */}
+            <a
+              href="https://www.instagram.com/tehranhookahlounge/?hl=en"
+              target="_blank"
+            >
+              <button className="followus-btn" onClick={() => {}}>
+                Follow Us
+              </button>
+            </a>
           </div>
         </Container>
       </section>
@@ -265,10 +285,12 @@ const Hookah = () => {
       <Contact />
       <footer>
         <Container>
-        <div className="footer-menu text-center">
+          <div className="footer-menu text-center">
             <a href="/home">HOME</a> <a href="/menu">Menu</a>{" "}
-            <a href="/hookah">Hookah</a> <a href="/happy-hour">Happy Hour</a> <br></br>
-            <a href="/big-party">Big Party</a> <a href="/book-table">Book a table</a>
+            <a href="/hookah">Hookah</a> <a href="/happy-hour">Happy Hour</a>{" "}
+            <br></br>
+            <a href="/big-party">Big Party</a>{" "}
+            <a href="/book-table">Book a table</a>
           </div>
           <div className="row align-items-center pb-5">
             <div className="col-md-4"></div>

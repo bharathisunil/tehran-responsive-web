@@ -228,9 +228,14 @@ const Hookah = () => {
                 <span className="tag-text">@Tehranhookahlounge</span>
               </div>
             </div>
-            <Button type="submit" value="Send" className="followus-btn">
-              Follow Us
-            </Button>
+            <a
+              href="https://www.instagram.com/tehranhookahlounge/?hl=en"
+              target="_blank"
+            >
+              <button className="followus-btn" onClick={() => {}}>
+                Follow Us
+              </button>
+            </a>
           </div>
         </Container>
       </section>
