@@ -10,8 +10,8 @@ function IndividualIntervalsExample() {
   return (
     <section className="carousel-sec1">
       <Carousel controls={false} indicators={false}>
-        <Carousel.Item interval={2000}>
-          <img className="d-block w-100 img-size" src={img1} alt="Image One" />
+        <Carousel.Item interval={2000} className="banner banner1">
+          {/* <img className="d-block w-100 img-size" src={img1} alt="Image One" /> */}
           <Carousel.Caption>
             <div className="titles">
               <div className="font1">Indulge in</div>
@@ -22,8 +22,8 @@ function IndividualIntervalsExample() {
             </div>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={2000}>
-          <img className="d-block w-100 img-size" src={img2} alt="Image One" />
+        <Carousel.Item interval={2000} className="banner banner2">
+          {/* <img className="d-block w-100 img-size" src={img2} alt="Image One" /> */}
           <Carousel.Caption>
             <div className="titles">
               <div className="font1">Hookah whispers</div>
@@ -34,8 +34,8 @@ function IndividualIntervalsExample() {
             </div>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={2000}>
-          <img className="d-block w-100 img-size" src={img3} alt="Image One" />
+        <Carousel.Item interval={2000} className="banner banner3">
+          {/* <img className="d-block w-100 img-size" src={img3} alt="Image One" /> */}
           <Carousel.Caption>
             <div className="titles">
               <div className="font1">Flavor Voyage,</div>
@@ -46,8 +46,8 @@ function IndividualIntervalsExample() {
             </div>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={2000}>
-          <img className="d-block w-100 img-size" src={img4} alt="Image One" />
+        <Carousel.Item interval={2000} className="banner banner4">
+          {/* <img className="d-block w-100 img-size" src={img4} alt="Image One" /> */}
           <Carousel.Caption>
             <div className="titles">
               <div className="font1">Unwind with Friends</div>
@@ -58,8 +58,8 @@ function IndividualIntervalsExample() {
             </div>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={2000}>
-          <img className="d-block w-100 img-size" src={img5} alt="Image One" />
+        <Carousel.Item interval={2000} className="banner banner5">
+          {/* <img className="d-block w-100 img-size" src={img5} alt="Image One" /> */}
           <Carousel.Caption>
             <div className="titles">
               <div className="font1">Smoke and</div>

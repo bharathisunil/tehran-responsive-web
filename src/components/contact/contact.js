@@ -34,15 +34,10 @@ const Contact = () => {
           </div>
           <div className="col-md-3">
             <div className="lable">Follow Us:</div>
-            <div className="value">@tehranlounge</div>
-            <a
+            <div className="value"> <a
               href="https://www.instagram.com/tehranhookahlounge/?hl=en"
-              target="_blank"
-            >
-              <button className="followus-btn" onClick={() => {}}>
-                Follow Us
-              </button>
-            </a>
+              target="_blank" className="value"
+            >@tehranlounge</a></div>
           </div>
         </div>
         <hr className="mt-5"></hr>

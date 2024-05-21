@@ -4,13 +4,30 @@
 }
 
 .carousel-sec1 {
-    /* background-image: url(../assets/banner-img.png);
-    min-height: 816px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
     overflow: hidden;
     padding: 0%;
+    .banner {
+      min-height: 816px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .banner1 {
+      background-image: url(../assets/slider-img01.jpg);
+      background-position: right;
+    }
+    .banner2 {
+      background-image: url(../assets/slider-img02.jpg);
+    }
+    .banner3 {
+      background-image: url(../assets/slider-img03.jpg);
+    }
+    .banner4 {
+      background-image: url(../assets/slider-img04.jpg);
+    }
+    .banner5 {
+      background-image: url(../assets/slider-img05.jpg);
+    }
     .carousel-caption {
       bottom: 40% !important;
     }
@@ -41,20 +58,20 @@
   }
 
   @media (max-width: 768px) {
-    .carousel-sec1 .carousel-caption {
-      bottom: 20% !important;
-  }
+    .carousel-sec1 .banner {
+      min-height: 70vh;
+    }
     .carousel-sec1 .titles {
       line-height: 30px;
     }
     .carousel-sec1 .font1 {
-      font-size: 20px;
+      font-size: 26px;
     }
     .carousel-sec1 .font2 {
-      font-size: 26px;
+      font-size: 30px;
     }
     .carousel-sec1 .font3 {
-      font-size: 26px;
+      font-size: 30px;
     }
     .carousel-caption {
       left: 5%;
