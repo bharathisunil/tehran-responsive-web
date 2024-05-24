@@ -501,7 +501,7 @@ const Home = () => {
             </div>
             <div className="col-md-3">
               <div className="lable">Located:</div>
-              <div className="value">123 W 45th Newyork</div>
+              <div className="value">5420 Deep Lake RD Suite 1088, Oviedo, FL 32765</div>
             </div>
             <div className="col-md-3">
               <div className="lable">Phone:</div>

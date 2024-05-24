@@ -1,0 +1,120 @@
+.big-party-content-area {
+    background-color: #21040c;
+    overflow: hidden;
+    color: #fff;
+    .title {
+        font-family: "Yeseva One", serif;
+        font-size: 64px;
+        color: #087b6f;
+        line-height: 60px;
+    }
+    .title2 {
+        font-family: "Yeseva One", serif;
+        font-size: 36px;
+        color: #fff;
+        line-height: 36px;
+    }
+    .title3 {
+        font-family: "Yeseva One", serif;
+        font-size: 32px;
+        color: #d1b982;
+    }
+    .sub-text1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #d1b982;
+    }
+    .sub-text2 {
+        font-family: "Sacramento", cursive;
+        font-size: 48px;
+        color: #fff;
+    }
+    p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+    }
+    .form-box {
+        background: linear-gradient(180deg, #21040C 0%, #350C18 100%);
+        border: 1px solid #C54A4A;
+        border-radius: 25px;
+    }
+    .form-control,
+    .form-select {
+        background-color: #000000;
+        border-color: #505050;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 16px;
+        height: 60px;
+    }
+    .form-control::placeholder,
+    .form-select::placeholder {
+        color: #666666;
+    }
+    .book-btn {
+        background-color: #7c9aa0;
+        border-color: #7c9aa0;
+        font-size: 20px;
+        color: #000000;
+        font-weight: 500;
+        min-width: 300px;
+        height: 60px;
+    }
+    .right-line {
+        background-image: url(../assets/book-table/line.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+    }
+    .what-we-offer {
+        background-image: url(../assets/big-party/what-we-offer-bg.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+    }
+    .our-service-bg::before {
+        // content:url('../assets/big-party/services-left-bg.png');
+        content:'';
+        background-image: url(../assets/big-party/services-left-bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 100%;
+        position: absolute;
+        display: block;
+        left: 0;
+        top:0;
+    }
+    .our-service-bg::after {
+        content:'';
+        background-image: url(../assets/big-party/services-right-bg.png);
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 100%;
+        position: absolute;
+        display: block;
+        right: 0;
+        top: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .big-party-content-area .title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .big-party-content-area .title2 {
+        font-size: 34px;
+        line-height: 34px;
+    }
+    .big-party-content-area p {
+        font-size: 12px;
+    }
+    .big-party-content-area .right-line {
+        background: none;
+    }
+}

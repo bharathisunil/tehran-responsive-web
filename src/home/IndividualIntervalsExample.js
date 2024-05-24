@@ -1,4 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
+import Button from "react-bootstrap/Button";
 import img1 from "../assets/slider-img01.jpg";
 import img2 from "../assets/slider-img02.jpg";
 import img3 from "../assets/slider-img03.jpg";
@@ -19,6 +20,9 @@ function IndividualIntervalsExample() {
                 Exotic Flavour <span>&</span>
               </div>
               <div className="font3">Relaxing Atmosphere</div>
+              <Button type="submit" value="Send" className="book-btn" href="/book-table">
+                  Book a Table
+              </Button>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
@@ -55,6 +59,9 @@ function IndividualIntervalsExample() {
               Embrace Flavor
               </div>
               <div className="font3">Create Lasting Memories</div>
+              <Button type="submit" value="Send" className="book-btn" target="_blank" href="https://www.instagram.com/tehranhookahlounge/?hl=en">
+                Follow Us
+              </Button>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
@@ -67,6 +74,9 @@ function IndividualIntervalsExample() {
               Celebrate
               </div>
               <div className="font3">Join the Hookah Extravaganza</div>
+              <Button type="submit" value="Send" className="book-btn" href="/">
+                Contact Us
+              </Button>
             </div>
           </Carousel.Caption>
         </Carousel.Item>

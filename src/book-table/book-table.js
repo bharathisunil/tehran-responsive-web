@@ -55,7 +55,7 @@ const Hookah = () => {
       <section
         className="inner-banner d-flex justify-content-center align-items-center py-3"
         style={{
-          backgroundImage: `url(${require("../assets/happy-hour/banner.png")})`,
+          backgroundImage: `url(${require("../assets/book-table/banner.png")})`,
         }}
       >
         <Container className="text-center">
@@ -161,6 +161,7 @@ const Hookah = () => {
                 alt="BookatableImg1"
                 className="mw-100"
               ></img>
+              <div className="sub-text2">Flavourful <br></br> Journey</div>
             </div>
             <div className="col-md-4 text-center">
               <img

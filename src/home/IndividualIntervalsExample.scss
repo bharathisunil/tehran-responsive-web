@@ -55,6 +55,20 @@
       position: absolute;
       bottom: 40px;
     }
+    .book-btn {
+      background-color: #000000;
+      border: 2px solid #087B6F;
+      font-size: 20px;
+      color: #fff;
+      min-width: 250px;
+      padding: 10px 0;
+      font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    .book-btn:hover {
+      background-color: #087B6F;
+    }
   }
 
   @media (max-width: 768px) {
@@ -62,16 +76,16 @@
       min-height: 70vh;
     }
     .carousel-sec1 .titles {
-      line-height: 30px;
+      line-height: 48px;
     }
     .carousel-sec1 .font1 {
       font-size: 26px;
     }
     .carousel-sec1 .font2 {
-      font-size: 30px;
+      font-size: 48px;
     }
     .carousel-sec1 .font3 {
-      font-size: 30px;
+      font-size: 48px;
     }
     .carousel-caption {
       left: 5%;
