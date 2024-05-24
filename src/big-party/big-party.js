@@ -113,7 +113,7 @@ const Hookah = () => {
                 <div className="col-md-3 pb-3">
                   <Form.Control
                     size="lg"
-                    type="text"
+                    type="date"
                     placeholder="Date"
                     className="w-100"
                     name="first_name"
@@ -122,7 +122,7 @@ const Hookah = () => {
                 <div className="col-md-3 pb-3">
                   <Form.Control
                     size="lg"
-                    type="text"
+                    type="time"
                     placeholder="Time"
                     className="w-100"
                     name="last_name"
