@@ -74,6 +74,7 @@ footer {
   background-position: center;
   min-height: 368px;
   color: #fff;
+  margin-top: 138px;
   h1 {
     font-family: "Yeseva One", serif;
     font-size: 48px;
@@ -113,7 +114,8 @@ footer {
 
 @media (max-width: 768px) {
   .inner-banner {
-    min-height: auto;
+    min-height: 185px;
+    margin-top: 80px;
     h1 {
       font-size: 36px;
     }
@@ -123,6 +125,11 @@ footer {
   }
   .home-contact-sec h2 {
     font-size: 40px;
+  }
+
+  .navbar  {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .navbar-nav {
     display: flex;

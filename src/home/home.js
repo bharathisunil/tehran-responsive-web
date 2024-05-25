@@ -75,7 +75,7 @@ const Home = () => {
   };
   return (
     <div>
-      <Navbar bg="dark" data-bs-theme="dark" expand="lg">
+      <Navbar bg="dark" data-bs-theme="dark" expand="lg" fixed="top">
         <Container>
           <Navbar.Brand href="#home" className="d-block d-md-block d-lg-none ">
             <a href="/home">

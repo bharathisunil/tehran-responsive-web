@@ -6,6 +6,7 @@
 .carousel-sec1 {
     overflow: hidden;
     padding: 0%;
+    margin-top: 138px;
     .banner {
       min-height: 816px;
       background-repeat: no-repeat;
@@ -73,6 +74,9 @@
   }
 
   @media (max-width: 768px) {
+    .carousel-sec1 {
+      margin-top: 80px;
+    }
     .carousel-sec1 .banner {
       min-height: 70vh;
     }
