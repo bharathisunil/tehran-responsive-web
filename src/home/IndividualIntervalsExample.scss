@@ -28,6 +28,7 @@
     .banner5 {
       background-image: url(../assets/slider-img05.jpg);
     }
+    
     .carousel-caption {
       bottom: 40% !important;
     }
@@ -90,5 +91,8 @@
     .carousel-caption {
       left: 5%;
       right: 5%;
+    }
+    .carousel-sec1 .carousel-caption {
+      bottom: 30% !important;
     }
    }
