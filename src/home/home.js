@@ -20,6 +20,13 @@ import Brand3 from "../assets/brand03.png";
 import Brand4 from "../assets/brand04.png";
 import Brand5 from "../assets/brand05.png";
 import MenuItem1 from "../assets/menu-item1.png";
+import MenuItem2 from "../assets/menu-item2.png";
+import MenuItem3 from "../assets/menu-item3.png";
+import MenuItem4 from "../assets/menu-item4.png";
+import MenuItem5 from "../assets/menu-item5.png";
+import MenuItem6 from "../assets/menu-item6.png";
+import MenuItem7 from "../assets/menu-item7.png";
+import MenuItem8 from "../assets/menu-item8.png";
 import InstaIcon from "../assets/insta-icon.png";
 import LargeGathering from "../assets/large-gathering-bg.png";
 import emailjs from "@emailjs/browser";
@@ -191,7 +198,7 @@ const Home = () => {
                     </div>
                     <div className="col-md-6 pb-3" data-bs-theme="dark">
                       <Form.Select>
-                        <option>2</option>
+                        <option>No of members</option>
                         <option value="1">4</option>
                         <option value="2">6</option>
                         <option value="3">8</option>
@@ -243,7 +250,7 @@ const Home = () => {
             <div className="col-6 col-md-3">
               <div className="menu-item">
                 <div className="item-img mb-3">
-                  <img src={MenuItem1} alt="Flavour" className="menu item" />
+                  <img src={MenuItem2} alt="Flavour" className="menu item" />
                 </div>
                 <div className="item-name">Vegetable samosa</div>
                 <div className="item-price">$5.00</div>
@@ -252,7 +259,7 @@ const Home = () => {
             <div className="col-6 col-md-3">
               <div className="menu-item">
                 <div className="item-img mb-3">
-                  <img src={MenuItem1} alt="Flavour" className="menu item" />
+                  <img src={MenuItem3} alt="Flavour" className="menu item" />
                 </div>
                 <div className="item-name">Vegetable samosa</div>
                 <div className="item-price">$5.00</div>
@@ -261,7 +268,7 @@ const Home = () => {
             <div className="col-6 col-md-3">
               <div className="menu-item">
                 <div className="item-img mb-3">
-                  <img src={MenuItem1} alt="Flavour" className="menu item" />
+                  <img src={MenuItem4} alt="Flavour" className="menu item" />
                 </div>
                 <div className="item-name">Vegetable samosa</div>
                 <div className="item-price">$5.00</div>
@@ -270,7 +277,7 @@ const Home = () => {
             <div className="col-6 col-md-3">
               <div className="menu-item">
                 <div className="item-img mb-3">
-                  <img src={MenuItem1} alt="Flavour" className="menu item" />
+                  <img src={MenuItem5} alt="Flavour" className="menu item" />
                 </div>
                 <div className="item-name">Vegetable samosa</div>
                 <div className="item-price">$5.00</div>
@@ -279,7 +286,7 @@ const Home = () => {
             <div className="col-6 col-md-3">
               <div className="menu-item">
                 <div className="item-img mb-3">
-                  <img src={MenuItem1} alt="Flavour" className="menu item" />
+                  <img src={MenuItem6} alt="Flavour" className="menu item" />
                 </div>
                 <div className="item-name">Vegetable samosa</div>
                 <div className="item-price">$5.00</div>
@@ -288,7 +295,7 @@ const Home = () => {
             <div className="col-6 col-md-3">
               <div className="menu-item">
                 <div className="item-img mb-3">
-                  <img src={MenuItem1} alt="Flavour" className="menu item" />
+                  <img src={MenuItem7} alt="Flavour" className="menu item" />
                 </div>
                 <div className="item-name">Vegetable samosa</div>
                 <div className="item-price">$5.00</div>
@@ -297,7 +304,7 @@ const Home = () => {
             <div className="col-6 col-md-3">
               <div className="menu-item">
                 <div className="item-img mb-3">
-                  <img src={MenuItem1} alt="Flavour" className="menu item" />
+                  <img src={MenuItem8} alt="Flavour" className="menu item" />
                 </div>
                 <div className="item-name">Vegetable samosa</div>
                 <div className="item-price">$5.00</div>
@@ -355,8 +362,8 @@ const Home = () => {
           {/* <div className="hh-text2 position-relative">SISHA AT</div> */}
           {/* <div className="hh-text3">Just $10</div> */}
           <div className="border2 d-inline-block"></div>
-          <div className="hh-text4">Sunday - Thursday | 6PM - 12PM</div>
-          <div className="hh-text4">Friday - Saturday | 6PM - 2AM</div>
+          <div className="hh-text4">Monday to Thursday ALL DAY</div>
+          {/* <div className="hh-text4">Friday - Saturday | 6PM - 2AM</div> */}
         </div>
       </section>
       <section className="large-gatherings">

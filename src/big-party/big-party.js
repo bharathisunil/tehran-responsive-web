@@ -149,7 +149,7 @@ const Hookah = () => {
                 </div>
                 <div className="col-md-3 pb-3" data-bs-theme="dark">
                   <Form.Select>
-                    <option>2</option>
+                  <option>No of members</option>
                     <option value="1">4</option>
                     <option value="2">6</option>
                     <option value="3">8</option>

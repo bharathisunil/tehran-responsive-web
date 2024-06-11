@@ -8,16 +8,23 @@ import Logo from "../assets/logo.svg";
 import LogoDark from "../assets/logo-dark.svg";
 import MenuImg1 from "../assets/menu/menu-img1.png";
 import Salad from "../assets/menu/salad.png";
+import Cocktails from "../assets/menu/cocktail.png";
+import Tapas from "../assets/menu/tapas.png";
+import Hookah from "../assets/menu/hookah.png";
+import Drinks from "../assets/menu/drinks.png";
 import "./menu.scss";
 import Contact from "../components/contact/contact";
+import Accordion from "react-bootstrap/Accordion";
 
 const Menu = () => {
   return (
     <div>
-       <Navbar bg="dark" data-bs-theme="dark" expand="lg" fixed="top">
+      <Navbar bg="dark" data-bs-theme="dark" expand="lg" fixed="top">
         <Container>
           <Navbar.Brand href="#home" className="d-block d-md-block d-lg-none ">
-            <a href="/home"><img src={Logo} alt="Logo" height="40px" /></a>
+            <a href="/home">
+              <img src={Logo} alt="Logo" height="40px" />
+            </a>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
@@ -54,10 +61,10 @@ const Menu = () => {
         }}
       >
         <Container className="text-center">
-          <h1 data-aos="fade-down"
-            data-aos-duration="1500">MENU</h1>
-          <div className="sub-text"  data-aos="zoom-in"
-            data-aos-duration="1500">
+          <h1 data-aos="fade-down" data-aos-duration="1500">
+            MENU
+          </h1>
+          <div className="sub-text" data-aos="zoom-in" data-aos-duration="1500">
             Experience the rich flavors of shisha tobacco in a vibrant and
             welcoming atmosphere at our hookah lounge, perfect for socializing
             and relaxation.
@@ -68,12 +75,18 @@ const Menu = () => {
         <Container className="text-center">
           <div className="row justify-content-center">
             <div className="col-md-7">
-              <div className="title pb-5"  data-aos="fade-up"
-            data-aos-duration="1500">
+              <div
+                className="title pb-5"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 Our Selection at Tehran hookah lounge
               </div>
-              <p className="pb-4"  data-aos="fade-right"
-            data-aos-duration="1500">
+              <p
+                className="pb-4"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
                 Explore our enticing hookah menu, crafted to satisfy every
                 palate. From classic flavors to exotic blends, our selection
                 promises a delightful journey into the world of shisha. Whether
@@ -85,7 +98,8 @@ const Menu = () => {
                 <img
                   src={MenuImg1}
                   alt="Our selection"
-                  className="mw-100 position-relative z-1"  data-aos="zoom-in"
+                  className="mw-100 position-relative z-1"
+                  data-aos="zoom-in"
                   data-aos-duration="1500"
                 />
               </div>
@@ -95,13 +109,53 @@ const Menu = () => {
       </section>
       <section className="different-flavours pb-5">
         <Container>
-          <div className="title pb-5 text-center" data-aos="fade-right"
-            data-aos-duration="1500">
-            Try One of Our Many Different Shisha Flavours
+          <div
+            className="title pb-5 text-center"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            What we serve
           </div>
           <div className="row">
-            <div className="col-md-6" data-aos="fade-left"
-            data-aos-duration="1500">
+            <div
+              className="col-6 col-md-3 text-center"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
+              <img src={Cocktails} alt="Our selection" className="mw-100" />
+              <div className="serve-name pt-4">Cocktails</div>
+            </div>
+            <div
+              className="col-6 col-md-3 text-center"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
+              <img src={Tapas} alt="Our selection" className="mw-100" />
+              <div className="serve-name pt-4">Tapas</div>
+            </div>
+            <div
+              className="col-6 col-md-3 text-center"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
+              <img src={Hookah} alt="Our selection" className="mw-100" />
+              <div className="serve-name pt-4">Hookah</div>
+            </div>
+            <div
+              className="col-6 col-md-3 text-center"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
+              <img src={Drinks} alt="Our selection" className="mw-100" />
+              <div className="serve-name pt-4">Drinks</div>
+            </div>
+          </div>
+          {/* <div className="row">
+            <div
+              className="col-md-6"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
               <div className="pb-3">
                 <div className="flavour-name">Blue Dew</div>
                 <p>A blend of blueberry and honeydew melon</p>
@@ -119,8 +173,11 @@ const Menu = () => {
                 <p>Peach with notes of creamy, citrus and spice</p>
               </div>
             </div>
-            <div className="col-md-6" data-aos="fade-right"
-            data-aos-duration="1500">
+            <div
+              className="col-md-6"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <div className="pb-3">
                 <div className="flavour-name">Irish Peach</div>
                 <p>Peach with notes of creamy, citrus and spice</p>
@@ -138,13 +195,16 @@ const Menu = () => {
                 <p>Pineapple and coconut with vanilla overtones</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </Container>
       </section>
       <section className="side-dishes-sec">
         <Container>
-          <div className="reserve-table" data-aos="zoom-in"
-            data-aos-duration="1500">
+          <div
+            className="reserve-table"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <div className="bg-img text-center d-flex align-items-center justify-content-center">
               <div>
                 <div className="title pb-4">Reserve a table</div>
@@ -158,6 +218,144 @@ const Menu = () => {
               </div>
             </div>
           </div>
+
+          <Accordion
+            defaultActiveKey="0"
+            data-bs-theme="dark"
+            className="custom-accordion"
+          >
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>Cocktails</Accordion.Header>
+              <Accordion.Body>
+                <div className="row g-5">
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">Classic Mojito</div>
+                        <div className="item-description">
+                          Fresh mint, lime, rum and sparkling water
+                        </div>
+                      </div>
+                      <div className="item-price">$11.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">Tequila Sunshine</div>
+                        <div className="item-description">
+                          Tequila, orange juice, grenadine sunset
+                        </div>
+                      </div>
+                      <div className="item-price">$11.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">Classic Margarita</div>
+                        <div className="item-description">
+                          Tequila, lime juice and triple sec
+                        </div>
+                      </div>
+                      <div className="item-price">$11.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">Rasberry Margarita</div>
+                        <div className="item-description">
+                          Tequila, raspberry puree, lime juice
+                        </div>
+                      </div>
+                      <div className="item-price">$11.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">Pin Colada</div>
+                        <div className="item-description">
+                          Rum, coconut cream, pineapple juice
+                        </div>
+                      </div>
+                      <div className="item-price">$12.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item">
+                      <div>
+                        <div className="item-name">Electic Slide</div>
+                        <div className="item-description">
+                          Vodka or Tequila, grapefruit juice, slated rim
+                        </div>
+                      </div>
+                      <div className="item-price">$12.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">Martini</div>
+                        <div className="item-description">
+                          Gin or vodka with dry vermouh
+                        </div>
+                      </div>
+                      <div className="item-price">$11.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">Matador</div>
+                        <div className="item-description">
+                          Tequila, pineapple juice, lime{" "}
+                        </div>
+                      </div>
+                      <div className="item-price">$11.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">EL Nino</div>
+                        <div className="item-description">
+                          Tequila, rose, syrup, sliced strawberries, triple sec
+                        </div>
+                      </div>
+                      <div className="item-price">$11.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">Paloma</div>
+                        <div className="item-description">
+                          Tequila, grapefruit puree, soda, lime
+                        </div>
+                      </div>
+                      <div className="item-price">$11.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">Blue Long Island</div>
+                        <div className="item-description">
+                          Vodka, gin, rum, tequila, blue, curacao
+                        </div>
+                      </div>
+                      <div className="item-price">$11.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">Whiskey & Coke</div>
+                        <div className="item-description">
+                          Smooth whiskey with classic cola
+                        </div>
+                      </div>
+                      <div className="item-price">$11.99</div>
+                    </div>
+                  </div>
+                </div>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>Tapas</Accordion.Header>
+              <Accordion.Body></Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>Hookah</Accordion.Header>
+              <Accordion.Body></Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="3">
+              <Accordion.Header>Drinks</Accordion.Header>
+              <Accordion.Body></Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
           {/* <div className="row justify-content-center text-center pb-5">
             <div className="col-md-9">
               <div className="title2">
@@ -165,10 +363,14 @@ const Menu = () => {
               </div>
             </div>
           </div> */}
-          <div className="sub-title position-relative mb-3" data-aos="fade-right"
-            data-aos-duration="1500">Salads</div>
-          <div className="row" data-aos="fade-left"
-            data-aos-duration="1500">
+          {/* <div
+            className="sub-title position-relative mb-3"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            Salads
+          </div>
+          <div className="row" data-aos="fade-left" data-aos-duration="1500">
             <div className="col-md-6">
               <div className="d-flex dish">
                 <div className="dish-img me-3">
@@ -200,10 +402,14 @@ const Menu = () => {
               </div>
             </div>
           </div>
-          <div className="sub-title position-relative mb-3" data-aos="fade-right"
-            data-aos-duration="1500">Starters</div>
-          <div className="row" data-aos="fade-left"
-            data-aos-duration="1500">
+          <div
+            className="sub-title position-relative mb-3"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            Starters
+          </div>
+          <div className="row" data-aos="fade-left" data-aos-duration="1500">
             <div className="col-md-6">
               <div className="d-flex dish">
                 <div className="dish-img me-3">
@@ -212,7 +418,8 @@ const Menu = () => {
                 <div>
                   <div className="dish-name">French fries</div>
                   <p>
-                  Сhopped romaine lettuce and garlicky croutons, eggs, olive oil, lemon, Parmesan
+                    Сhopped romaine lettuce and garlicky croutons, eggs, olive
+                    oil, lemon, Parmesan
                   </p>
                   <div className="price">$11.00</div>
                 </div>
@@ -226,13 +433,14 @@ const Menu = () => {
                 <div>
                   <div className="dish-name">Classic burger</div>
                   <p>
-                  Сhopped romaine lettuce and garlicky croutons, eggs, olive oil, lemon, Parmesan
+                    Сhopped romaine lettuce and garlicky croutons, eggs, olive
+                    oil, lemon, Parmesan
                   </p>
                   <div className="price">$14.00</div>
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* <div className="sub-title position-relative mb-3">Mains</div>
           <div className="row">
             <div className="col-md-6">
@@ -293,13 +501,15 @@ const Menu = () => {
           <hr className="mt-5"></hr>
         </Container>
       </section> */}
-      <Contact/>
+      <Contact />
       <footer>
         <Container>
-        <div className="footer-menu text-center">
+          <div className="footer-menu text-center">
             <a href="/home">HOME</a> <a href="/menu">Menu</a>{" "}
-            <a href="/hookah">Hookah</a> <a href="/happy-hour">Happy Hour</a> <br></br>
-            <a href="/big-party">Big Party</a> <a href="/book-table">Book a table</a>
+            <a href="/hookah">Hookah</a> <a href="/happy-hour">Happy Hour</a>{" "}
+            <br></br>
+            <a href="/big-party">Big Party</a>{" "}
+            <a href="/book-table">Book a table</a>
           </div>
           <div className="row align-items-center pb-5">
             <div className="col-md-4"></div>
