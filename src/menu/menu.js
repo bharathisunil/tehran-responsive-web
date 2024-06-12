@@ -345,15 +345,482 @@ const Menu = () => {
             </Accordion.Item>
             <Accordion.Item eventKey="1">
               <Accordion.Header>Tapas</Accordion.Header>
-              <Accordion.Body></Accordion.Body>
+              <Accordion.Body>
+                <div className="row gx-5">
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">CHICKEN NUGGETS & FRIES</div>
+                        <div className="item-description">
+                          Juicy nuggets with crispy, golden fries.
+                        </div>
+                      </div>
+                      <div className="item-price">$7.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">CHICKEN KABOB</div>
+                        <div className="item-description">
+                          Marinated chicken, grilled to perfection.
+                        </div>
+                      </div>
+                      <div className="item-price">$6.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">NACHO MOUNTAIN</div>
+                        <div className="item-description">
+                          Tortilla chips piled high with cheese and toppings.
+                        </div>
+                      </div>
+                      <div className="item-price">$11.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">LAMB KABOB</div>
+                        <div className="item-description">
+                          Juicy, spiced lamb, expertly grilled.
+                        </div>
+                      </div>
+                      <div className="item-price">$8.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">TEHRAN TACOS</div>
+                        <div className="item-description">
+                          (BEEF OR CHICKEN) <br></br>
+                          Spiced meats with vibrant, fresh toppings.
+                        </div>
+                      </div>
+                      <div className="item-price">$7.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">ALOO TIKI</div>
+                        <div className="item-description">
+                          Seasoned potato patties with aromatic spices
+                        </div>
+                      </div>
+                      <div className="item-price">$4.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">VEG SAMOSA (2)</div>
+                        <div className="item-description">
+                          Flaky pastry stuffed with spiced potatoes and peas.
+                        </div>
+                      </div>
+                      <div className="item-price">$4.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">CHICKEN SPRING ROLL</div>
+                        <div className="item-description">
+                          Golden rolls with tender, spiced chicken.
+                        </div>
+                      </div>
+                      <div className="item-price">$6.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">VEG SPRING ROLL (3)</div>
+                        <div className="item-description">
+                          Crisp rolls filled with seasoned vegetables.
+                        </div>
+                      </div>
+                      <div className="item-price">$4.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">CHICKEN WINGS</div>
+                        <div className="item-description">
+                          Marinated wings, fried to golden crispiness.
+                        </div>
+                      </div>
+                      <div className="item-price">$8.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">BEEF SKEWERS</div>
+                        <div className="item-description">
+                          Marinated beef, grilled to tender perfection.
+                        </div>
+                      </div>
+                      <div className="item-price">$8.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">CHICKEN SKEWERS</div>
+                        <div className="item-description">
+                          Herb-marinated chicken, char-grilled.
+                        </div>
+                      </div>
+                      <div className="item-price">$6.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">BUTTERFLY SHRIMP</div>
+                        <div className="item-description">
+                          Crispy, golden-battered shrimp.
+                        </div>
+                      </div>
+                      <div className="item-price">$6.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">BEEF GYRO</div>
+                        <div className="item-description">
+                          Tender beef, wrapped in soft pita with tzatziki.
+                        </div>
+                      </div>
+                      <div className="item-price">$9.99</div>
+                    </div>
+                  </div>
+                </div>
+              </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="2">
-              <Accordion.Header>Hookah</Accordion.Header>
-              <Accordion.Body></Accordion.Body>
+              <Accordion.Header>SIDES</Accordion.Header>
+              <Accordion.Body>
+                <div className="row gx-5">
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">FRENCH FRIES</div>
+                      </div>
+                      <div className="item-price">$7.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">TZATZIKI SAUCE </div>
+                      </div>
+                      <div className="item-price">$1.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">TORTILLA CHIPS & SALSA</div>
+                      </div>
+                      <div className="item-price">$7.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">KETCHUP</div>
+                      </div>
+                      <div className="item-price">FREE</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">HUMMUS & PITA</div>
+                      </div>
+                      <div className="item-price">$9.99</div>
+                    </div>
+                  </div>
+                  <div className="col-12 menu-item">
+                  <div className="item-description">ALL CHECKS ARE SUBJECTED TO A 18% SOCIETY FEE(keep this line on center)</div>
+                  </div>
+                </div>
+              </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
+              <Accordion.Header>Hookah</Accordion.Header>
+              <Accordion.Body>
+              <div className="menu-sub-title pb-4">1. CHOOSE YOUR FLAVOR</div>
+                <div className="row gx-5">
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div className="w-100">
+                        <div className="item-name">ADAYA</div>
+                        <div className="item-description">
+                          <div className="row">
+                            <div className="col-4 text-nowrap">
+                              EXAGELADO <br></br>
+                              SWISS BONBON <br></br>
+                              BAKU NIGHTS <br></br>
+                              BLUE MELON <br></br>
+                              MINT <br></br>
+                              LOVE 66
+                            </div>
+                            <div className="col-4 text-nowrap">
+                              ICE RASPBERRY <br></br>
+                              MANGO TANGO <br></br>
+                              BLUEBERRY <br></br>
+                              LADY KILLER <br></br>
+                              LEMON COCKTAIL <br></br>
+                              WATERMELON
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="item-price">$28.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div className="w-100">
+                        <div className="item-name">STARBUZZ </div>
+                        <div className="item-description">
+                          <div className="row">
+                            <div className="col-4 text-nowrap">
+                              BLUE MIST <br></br>
+                              CODE 69 <br></br>
+                              SEX ON THE BEACH <br></br>
+                              GREEN SAVIOR
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div className="item-price">$28.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">AL FAHKER</div>
+                        <div className="item-description">
+                          <div className="row">
+                            <div className="col-6 col-md-3 text-nowrap">
+                              CINNAMON GUM <br></br>
+                              CHERRY <br></br>
+                              GRAPE <br></br>
+                              BUBBLEGUM <br></br>
+                              MIXED BERRY <br></br>
+                              ROSE <br></br>
+                              LEMON <br></br>
+                              ORANGE <br></br>
+                              MINT
+                            </div>
+                            <div className="col-6 col-md-3 text-nowrap">
+                            COCONUT <br></br>
+                            MELON <br></br>
+                            FRESH <br></br>
+                            HUBBLY <br></br>
+                            CHOCOLATE <br></br>
+                            APRICOT  <br></br>
+                            CAPPUCCINO  <br></br>
+                            PAN RAAS <br></br>
+                            STRAWBERRY
+                            </div>
+                            <div className="col-6 col-md-3 text-nowrap">
+                            MANGO <br></br>
+                            KIWI <br></br>
+                            PINEAPPLE <br></br>
+                            PEACH <br></br>
+                            GRAPEFRUIT <br></br>
+                            GUM <br></br>
+                            GUAVA <br></br>
+                            GRENADINE <br></br>
+                            VANILLA
+                            </div>
+                            <div className="col-6 col-md-3 text-nowrap">
+                            WATERMELON <br></br>
+                            BANANA <br></br>
+                            DOUBLE APPLE <br></br>
+                            BLUEBERRY <br></br>
+                            STRAWBERRY W/ CREAM
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div className="item-price">$24.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">AFZAL</div>
+                        <div className="item-description">PAN RAAS</div>
+                      </div>
+                      <div className="item-price">$22.99</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="menu-sub-title">2. CHOOSE A BASE</div>
+                <div className="menu-item pb-4">
+                  <div className="item-name">WATER I MILK +$6 | ICE +$6 | RED BULL +$10 I SANGRIA +$13 | FRUIT +$14</div>
+                </div>
+                <div className="menu-sub-title">3. CHOOSE A HEAD</div>
+                <div className="menu-item pb-4">
+                  <div className="item-name">CLASSIC I VINTAGE CERAMIC +$6 I FRESH PINEAPPLE +$10</div>
+                </div>
+                <div className="menu-sub-title">4. CHOOSE AN ADD-ON (OPTIONAL)</div>
+                <div className="menu-item pb-4">
+                  <div className="item-name">LOLIPOP-TIPS +$4 | BUBBLES +$6 | ICED HOSE +$8 | LED BASE +$9</div>
+                </div>
+                <div className="menu-sub-title">ALL REFILLS $9.99</div>
+                <div>ALL CHECKS ARE SUBJECTED TO A 18% SOCIETY FEE</div>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="4">
               <Accordion.Header>Drinks</Accordion.Header>
-              <Accordion.Body></Accordion.Body>
+              <Accordion.Body>
+              <div className="menu-sub-title pb-4">BEER</div>
+                <div className="row g-5 menu-item">
+                  <div className="col-md-6">
+                    <div className="item-name">IMPORTED BRANDS -- $6.99 I BUCKET (5) 28.99</div>
+                    <div className="item-description">
+                      CORONA EXTRA <br></br>
+                      CORONA LIGHT <br></br>
+                      CORONA PREMIER <br></br>
+                      STELLA <br></br>
+                      MODELO <br></br>
+                      HEINEKEN <br></br>
+                      RED STRIPE
+                    </div>
+                  </div>
+                  <div className="col-md-3">
+                    <div className="item-name">DRAFT BEERS -- $7.99</div>
+                    <div className="item-description">
+                      BUD LIGHT <br></br>
+                      YUENGLING <br></br>
+                      WICKED WEED <br></br>
+                      IPA <br></br>
+                      BLUE MOON
+                    </div>
+                  </div>
+                  <div className="col-md-3">
+                    <div className="item-name">SMIRNOFF ICE $6.99</div>
+                    <div className="item-description">
+                      ORIGINAL <br></br>
+                      MARGARITA <br></br>
+                      PEACH <br></br>
+                      GREEN APPLE <br></br>
+                      PINK <br></br>
+                      ORANGE <br></br>
+                      GRAPE
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="item-name">DOMESTIC BRANDS $5.99 | BUCKET (5) 25.99</div>
+                    <div className="item-description">
+                      BUD LIGHT <br></br>
+                      MILLER LITE <br></br>
+                      COORS LIGHT
+                    </div>
+                  </div>
+                  <div className="col-md-3">
+                    <div className="item-name">VODKA SODA $5.99</div>
+                    <div className="item-description">
+                      MOJITO <br></br>
+                      LIME <br></br>
+                      GRAPEFRUIT <br></br>
+                      CUCUMBER
+                    </div>
+                  </div>
+                  <div className="col-md-3">
+                    <div className="item-name">WHITE CLAW $6.99</div>
+                    <div className="item-description">
+                      MANGO <br></br>
+                      LIME <br></br>
+                      CHERRY <br></br>
+                      RASBERRY
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                        <div className="item-name">WATER</div>
+                        <div className="item-price">$2.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                        <div className="item-name">JUICE <span className="item-description">(MANGO)</span></div>
+                        <div className="item-price">$5.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                        <div className="item-name">SODA <span className="item-description"> (COKE I DIET COKE I SPRITE I GINGER ALE I PEPSI DIET) </span></div>
+                        <div className="item-price">$3.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                        <div className="item-name">PERRIER</div>
+                        <div className="item-price">$4.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                        <div className="item-name">ENERGY DRINKS <span className="item-description"> (RED BULLI BANG I MONSTER) </span></div>
+                        <div className="item-price">$6.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                        <div className="item-name">GATORADE </div>
+                        <div className="item-price">$3.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                        <div className="item-name">STARBUCKS CAPPICINO </div>
+                        <div className="item-price">$6.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                        <div className="item-name">LAZIZA <span className="item-description"> (REGULAR I RASPBERRY | PEACH I STRAWBERRY | APPLE I POMEGRANTE) </span></div>
+                        <div className="item-price">$4.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                        <div className="item-name">SMOOTHIES <span className="item-description"> (STRAWBERRY I BANANA I MIXED) </span></div>
+                        <div className="item-price">$9.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                        <div className="item-name">PROSECCO WINE</div>
+                        <div className="item-price">$8.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                        <div className="item-name">WINE RED/WHITE</div>
+                        <div className="item-price">$8.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                        <div className="item-name">WINE BOTTLE</div>
+                        <div className="item-price">$36.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                        <div className="item-name">SANGRIA GLASS</div>
+                        <div className="item-price">$8.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                        <div className="item-name">SANGRIA BOTTLE</div>
+                        <div className="item-price">$36.99</div>
+                    </div>
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                        <div className="item-name">MOËT BOTTLE</div>
+                        <div className="item-price">$149.99</div>
+                    </div>
+                  </div>
+                  <div className="col-12">
+                  WINE BOTTLE: CHARDONNAY I PINOT NOIR I CABERNET I SAUVIGNON I MERLOT I MOSCATO I ROSE
+                  </div>
+                  <div className="col-12">
+                  ALL CHECKS ARE SUBJECTED TO A 18% SOCIETY FEE
+                  </div>
+                </div>
+              </Accordion.Body>
             </Accordion.Item>
           </Accordion>
           {/* <div className="row justify-content-center text-center pb-5">
