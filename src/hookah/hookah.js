@@ -129,8 +129,8 @@ const Hookah = () => {
                 <div className="mb-3">
                   <img src={Flavor1} alt="Flavor" />
                 </div>
-                <div className="flavour-name pb-3">Aladin Wave</div>
-                <div className="price pb-4">$650</div>
+                <div className="flavour-name pb-3">Aladin <span>(flavour)</span></div>
+                <div className="price pb-4">$28.99</div>
               </div>
             </div>
             <div className="col-md-4 text-center pb-3">
@@ -139,8 +139,8 @@ const Hookah = () => {
                 <div className="mb-3">
                   <img src={Flavor2} alt="Flavor" />
                 </div>
-                <div className="flavour-name pb-3">Alpha Hookah Model C</div>
-                <div className="price pb-4">$370</div>
+                <div className="flavour-name pb-3">STARBUZZ <span>(flavour)</span></div>
+                <div className="price pb-4">$28.99</div>
               </div>
             </div>
             <div className="col-md-4 text-center pb-3">
@@ -149,8 +149,8 @@ const Hookah = () => {
                 <div className="mb-3">
                   <img src={Flavor3} alt="Flavor" />
                 </div>
-                <div className="flavour-name pb-3">Alpha Hookah Model A</div>
-                <div className="price pb-4">$520</div>
+                <div className="flavour-name pb-3">AL FAHKER <span>(flavour)</span></div>
+                <div className="price pb-4">$24.99</div>
               </div>
             </div>
           </div>
