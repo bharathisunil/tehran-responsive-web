@@ -108,7 +108,7 @@ const Hookah = () => {
                   <img src={Line} alt="Line" className="mx-100" />
                 </div>
                 <div className="day">Monday</div>
-                <div className="time">4pm-6pm</div>
+                <div className="time">ALL DAY</div>
               </div>
             </div>
             <div className="col-md-4 text-center">
@@ -129,7 +129,7 @@ const Hookah = () => {
                   <img src={Line} alt="Line" className="mx-100" />
                 </div>
                 <div className="day">Tuesday</div>
-                <div className="time">4pm-6pm</div>
+                <div className="time">ALL DAY</div>
               </div>
             </div>
             <div
@@ -150,7 +150,7 @@ const Hookah = () => {
                   <img src={Line} alt="Line" className="mx-100" />
                 </div>
                 <div className="day">Wednesday</div>
-                <div className="time">4pm-6pm</div>
+                <div className="time">ALL DAY</div>
               </div>
             </div>
             <div
@@ -171,10 +171,10 @@ const Hookah = () => {
                   <img src={Line} alt="Line" className="mx-100" />
                 </div>
                 <div className="day">Thursday</div>
-                <div className="time">4pm-6pm</div>
+                <div className="time">ALL DAY</div>
               </div>
             </div>
-            <div
+            {/* <div
               className="col-md-4 text-center"
               data-aos="zoom-in"
               data-aos-duration="1500"
@@ -192,9 +192,9 @@ const Hookah = () => {
                   <img src={Line} alt="Line" className="mx-100" />
                 </div>
                 <div className="day">Friday</div>
-                <div className="time">4pm-6pm</div>
+                <div className="time">ALL DAY</div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="row justify-content-center pt-5">
             <div className="col-md-7">
@@ -222,7 +222,7 @@ const Hookah = () => {
                   Indulge in culinary excellence with us; your reservation is
                   the gateway to an unforgettable dining adventure.
                 </p>
-                <Button variant="primary" className="book-btn mt-3">
+                <Button variant="primary" className="book-btn mt-3" href="/book-table">
                   Book a Table
                 </Button>
               </div>

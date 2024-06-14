@@ -212,7 +212,7 @@ const Menu = () => {
                   Indulge in culinary excellence with us; your reservation is
                   the gateway to an unforgettable dining adventure.
                 </p>
-                <Button variant="primary" className="book-btn mt-3">
+                <Button variant="primary" className="book-btn mt-3 d-inline-flex justify-content-center align-items-center" href="/book-table">
                   Book a Table
                 </Button>
               </div>

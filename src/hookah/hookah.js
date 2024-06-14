@@ -11,6 +11,7 @@ import Flavor2 from "../assets/hookah/flavor2.png";
 import Flavor3 from "../assets/hookah/flavor3.png";
 import "./hookah.scss";
 import Contact from "../components/contact/contact";
+import Accordion from "react-bootstrap/Accordion";
 
 const Hookah = () => {
   return (
@@ -153,7 +154,142 @@ const Hookah = () => {
               </div>
             </div>
           </div>
-          <div className="row justify-content-center text-center mb-5">
+          <Accordion
+            defaultActiveKey="0"
+            data-bs-theme="dark"
+            className="custom-accordion"
+          >
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>Hookah</Accordion.Header>
+              <Accordion.Body>
+              <div className="menu-sub-title pb-4">1. CHOOSE YOUR FLAVOR</div>
+                <div className="row gx-5">
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div className="w-100">
+                        <div className="item-name">ADAYA</div>
+                        <div className="item-description">
+                          <div className="row">
+                            <div className="col-4 text-nowrap">
+                              EXAGELADO <br></br>
+                              SWISS BONBON <br></br>
+                              BAKU NIGHTS <br></br>
+                              BLUE MELON <br></br>
+                              MINT <br></br>
+                              LOVE 66
+                            </div>
+                            <div className="col-4 text-nowrap">
+                              ICE RASPBERRY <br></br>
+                              MANGO TANGO <br></br>
+                              BLUEBERRY <br></br>
+                              LADY KILLER <br></br>
+                              LEMON COCKTAIL <br></br>
+                              WATERMELON
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="item-price">$28.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div className="w-100">
+                        <div className="item-name">STARBUZZ </div>
+                        <div className="item-description">
+                          <div className="row">
+                            <div className="col-4 text-nowrap">
+                              BLUE MIST <br></br>
+                              CODE 69 <br></br>
+                              SEX ON THE BEACH <br></br>
+                              GREEN SAVIOR
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div className="item-price">$28.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">AL FAHKER</div>
+                        <div className="item-description">
+                          <div className="row">
+                            <div className="col-6 col-md-3 text-nowrap">
+                              CINNAMON GUM <br></br>
+                              CHERRY <br></br>
+                              GRAPE <br></br>
+                              BUBBLEGUM <br></br>
+                              MIXED BERRY <br></br>
+                              ROSE <br></br>
+                              LEMON <br></br>
+                              ORANGE <br></br>
+                              MINT
+                            </div>
+                            <div className="col-6 col-md-3 text-nowrap">
+                            COCONUT <br></br>
+                            MELON <br></br>
+                            FRESH <br></br>
+                            HUBBLY <br></br>
+                            CHOCOLATE <br></br>
+                            APRICOT  <br></br>
+                            CAPPUCCINO  <br></br>
+                            PAN RAAS <br></br>
+                            STRAWBERRY
+                            </div>
+                            <div className="col-6 col-md-3 text-nowrap">
+                            MANGO <br></br>
+                            KIWI <br></br>
+                            PINEAPPLE <br></br>
+                            PEACH <br></br>
+                            GRAPEFRUIT <br></br>
+                            GUM <br></br>
+                            GUAVA <br></br>
+                            GRENADINE <br></br>
+                            VANILLA
+                            </div>
+                            <div className="col-6 col-md-3 text-nowrap">
+                            WATERMELON <br></br>
+                            BANANA <br></br>
+                            DOUBLE APPLE <br></br>
+                            BLUEBERRY <br></br>
+                            STRAWBERRY W/ CREAM
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div className="item-price">$24.99</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex justify-content-between menu-item pb-4">
+                      <div>
+                        <div className="item-name">AFZAL</div>
+                        <div className="item-description">PAN RAAS</div>
+                      </div>
+                      <div className="item-price">$22.99</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="menu-sub-title">2. CHOOSE A BASE</div>
+                <div className="menu-item pb-4">
+                  <div className="item-name">WATER I MILK +$6 | ICE +$6 | RED BULL +$10 I SANGRIA +$13 | FRUIT +$14</div>
+                </div>
+                <div className="menu-sub-title">3. CHOOSE A HEAD</div>
+                <div className="menu-item pb-4">
+                  <div className="item-name">CLASSIC I VINTAGE CERAMIC +$6 I FRESH PINEAPPLE +$10</div>
+                </div>
+                <div className="menu-sub-title">4. CHOOSE AN ADD-ON (OPTIONAL)</div>
+                <div className="menu-item pb-4">
+                  <div className="item-name">LOLIPOP-TIPS +$4 | BUBBLES +$6 | ICED HOSE +$8 | LED BASE +$9</div>
+                </div>
+                <div className="menu-sub-title">ALL REFILLS $9.99</div>
+                <div>ALL CHECKS ARE SUBJECTED TO A 18% SOCIETY FEE</div>
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+          <div className="row justify-content-center text-center mb-5 mt-5">
             <div className="col-md-7">
               <div className="title text-center pb-3" data-aos="fade-down"
             data-aos-duration="1500">Why Choose Us</div>
@@ -199,7 +335,7 @@ const Hookah = () => {
                 <p>
                 Indulge in culinary excellence with us; your reservation is the gateway to an unforgettable dining adventure.
                 </p>
-                <Button variant="primary" className="book-btn mt-3">
+                <Button variant="primary" className="book-btn mt-3 d-inline-flex justify-content-center align-items-center" href="/book-table">
                   Book a Table
                 </Button>
               </div>

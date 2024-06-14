@@ -22,7 +22,7 @@ const Welcome = () => {
             
            
           <div className='welcome-btn'>
-        <button>Book A Table</button>
+        <button href="/book-table">Book A Table</button>
           </div>
             
          </div>
@@ -43,7 +43,7 @@ const Welcome = () => {
             
            
           <div className='welcome-btn'>
-        <button>Book A Table</button>
+        <button href="/book-table">Book A Table</button>
           </div>
             
          </div>

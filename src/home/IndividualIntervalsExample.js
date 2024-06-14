@@ -74,7 +74,7 @@ function IndividualIntervalsExample() {
               Celebrate
               </div>
               <div className="font3">Join the Hookah Extravaganza</div>
-              <Button type="submit" value="Send" className="book-btn" href="/">
+              <Button type="submit" value="Send" className="book-btn" href="/book-table">
                 Contact Us
               </Button>
             </div>

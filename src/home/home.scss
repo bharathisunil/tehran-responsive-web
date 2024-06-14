@@ -315,6 +315,33 @@ footer {
       font-weight: 400;
     }
   }
+  .hookah-tastes {
+    background-image: url(../assets/hookah-flv-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #087B6F;
+    .hookah-text1 {
+      color: #3ECDBD;
+      font-size: 24px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+    }
+    .hookah-text2 {
+      font-size: 36px;
+      color: #d1b982;
+      font-family: "Yeseva One", serif;
+    }
+    .explore-btn {
+      background-color: #052521;
+      border-color: #087B6F;
+      font-size: 20px;
+      color: #fff;
+      font-weight: 500;
+      min-width: 250px;
+      height: 56px;
+  }
+  }
 }
 
 .large-gatherings {
@@ -428,5 +455,11 @@ footer {
   }
   .home-contact-sec h2 {
     font-size: 40px;
+  }
+  .home-menu .hookah-tastes .hookah-text1 {
+    font-size: 18px;
+  }
+  .home-menu .hookah-tastes .hookah-text2 {
+    font-size: 30px;
   }
 }

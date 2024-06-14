@@ -28,6 +28,7 @@ import MenuItem6 from "../assets/menu-item6.png";
 import MenuItem7 from "../assets/menu-item7.png";
 import MenuItem8 from "../assets/menu-item8.png";
 import InstaIcon from "../assets/insta-icon.png";
+import SmokeHookah from "../assets/smoke-hookah-img.png";
 import LargeGathering from "../assets/large-gathering-bg.png";
 import emailjs from "@emailjs/browser";
 import "./home.scss";
@@ -199,9 +200,10 @@ const Home = () => {
                     <div className="col-md-6 pb-3" data-bs-theme="dark">
                       <Form.Select>
                         <option>No of members</option>
-                        <option value="1">4</option>
-                        <option value="2">6</option>
-                        <option value="3">8</option>
+                        <option value="1">2</option>
+                        <option value="2">4</option>
+                        <option value="3">6</option>
+                        <option value="4">8</option>
                       </Form.Select>
                     </div>
                     <div className="col-md-6 pb-3">
@@ -244,7 +246,7 @@ const Home = () => {
                   <img src={MenuItem1} alt="Flavour" className="menu item" />
                 </div>
                 <div className="item-name">Vegetable samosa</div>
-                <div className="item-price">$5.00</div>
+                <div className="item-price">$4.99</div>
               </div>
             </div>
             <div className="col-6 col-md-3">
@@ -252,8 +254,8 @@ const Home = () => {
                 <div className="item-img mb-3">
                   <img src={MenuItem2} alt="Flavour" className="menu item" />
                 </div>
-                <div className="item-name">Vegetable samosa</div>
-                <div className="item-price">$5.00</div>
+                <div className="item-name">Veg Spring Roll</div>
+                <div className="item-price">$4.99</div>
               </div>
             </div>
             <div className="col-6 col-md-3">
@@ -261,8 +263,8 @@ const Home = () => {
                 <div className="item-img mb-3">
                   <img src={MenuItem3} alt="Flavour" className="menu item" />
                 </div>
-                <div className="item-name">Vegetable samosa</div>
-                <div className="item-price">$5.00</div>
+                <div className="item-name">Aloo Tiki</div>
+                <div className="item-price">$4.99</div>
               </div>
             </div>
             <div className="col-6 col-md-3">
@@ -270,8 +272,8 @@ const Home = () => {
                 <div className="item-img mb-3">
                   <img src={MenuItem4} alt="Flavour" className="menu item" />
                 </div>
-                <div className="item-name">Vegetable samosa</div>
-                <div className="item-price">$5.00</div>
+                <div className="item-name">Butterfly Shrimp</div>
+                <div className="item-price">$6.99</div>
               </div>
             </div>
             <div className="col-6 col-md-3">
@@ -279,8 +281,8 @@ const Home = () => {
                 <div className="item-img mb-3">
                   <img src={MenuItem5} alt="Flavour" className="menu item" />
                 </div>
-                <div className="item-name">Vegetable samosa</div>
-                <div className="item-price">$5.00</div>
+                <div className="item-name">Chicken Kebab</div>
+                <div className="item-price">$6.99</div>
               </div>
             </div>
             <div className="col-6 col-md-3">
@@ -288,8 +290,8 @@ const Home = () => {
                 <div className="item-img mb-3">
                   <img src={MenuItem6} alt="Flavour" className="menu item" />
                 </div>
-                <div className="item-name">Vegetable samosa</div>
-                <div className="item-price">$5.00</div>
+                <div className="item-name">Chicken Skewers</div>
+                <div className="item-price">$6.99</div>
               </div>
             </div>
             <div className="col-6 col-md-3">
@@ -297,8 +299,8 @@ const Home = () => {
                 <div className="item-img mb-3">
                   <img src={MenuItem7} alt="Flavour" className="menu item" />
                 </div>
-                <div className="item-name">Vegetable samosa</div>
-                <div className="item-price">$5.00</div>
+                <div className="item-name">Chicken Spring Roll</div>
+                <div className="item-price">$6.99</div>
               </div>
             </div>
             <div className="col-6 col-md-3">
@@ -306,12 +308,33 @@ const Home = () => {
                 <div className="item-img mb-3">
                   <img src={MenuItem8} alt="Flavour" className="menu item" />
                 </div>
-                <div className="item-name">Vegetable samosa</div>
-                <div className="item-price">$5.00</div>
+                <div className="item-name">Beef Skewers</div>
+                <div className="item-price">$8.99</div>
               </div>
             </div>
           </div>
-          <div
+          <div className="row justify-content-center mt-5"  data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-offset="300">
+            <div className="col-md-10">
+              <div className="hookah-tastes px-4 pb-5">
+                  <div className="row align-items-center justify-content-center">
+                    <div className="col-md-4 text-center">
+                      <img src={SmokeHookah} alt="Hookah" className="mw-100"  />
+                    </div>
+                    <div className="col-md-8">
+                        <div className="hookah-text1 pt-4 pt-md-0">Experience the smooth and satisfying taste of our premium hookah flavors, crafted to elevate your relaxation.</div>
+                        <div className="hookah-text2 pb-3">Dive into Diverse Hookah Tastes!</div>
+                        <Button type="submit" value="Send" className="explore-btn d-inline-flex justify-content-center align-items-center" href="/hookah">
+                        Explore
+                      </Button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* <div
             className="row"
             data-aos="fade-up"
             data-aos-duration="1500"
@@ -347,7 +370,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </Container>
       </section>
       <section className="happy-hours-sec py-5">
@@ -505,10 +528,11 @@ const Home = () => {
                     </div>
                     <div className="col-md-6 pb-3" data-bs-theme="dark">
                       <Form.Select>
-                        <option>10</option>
-                        <option value="1">20</option>
-                        <option value="2">30</option>
-                        <option value="3">40</option>
+                      <option>No of members</option>
+                        <option value="1">10</option>
+                        <option value="2">20</option>
+                        <option value="3">30</option>
+                        <option value="4">40</option>
                       </Form.Select>
                     </div>
                     <div className="col-md-6 pb-3">
