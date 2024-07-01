@@ -9,6 +9,7 @@ import LogoDark from "../assets/logo-dark.svg";
 import Flavor1 from "../assets/hookah/flavor1.png";
 import Flavor2 from "../assets/hookah/flavor2.png";
 import Flavor3 from "../assets/hookah/flavor3.png";
+import Flavor4 from "../assets/hookah/flavor4.png";
 import "./hookah.scss";
 import Contact from "../components/contact/contact";
 import Accordion from "react-bootstrap/Accordion";
@@ -123,17 +124,17 @@ const Hookah = () => {
             </div>
           </div>
           <div className="row mb-5">
-            <div className="col-md-4 text-center pb-3">
+            <div className="col-md-3 text-center pb-3">
               <div className="flavour-box" data-aos="zoom-in"
             data-aos-duration="1500">
                 <div className="mb-3">
                   <img src={Flavor1} alt="Flavor" />
                 </div>
-                <div className="flavour-name pb-3">Aladin <span>(flavour)</span></div>
+                <div className="flavour-name pb-3">ADAYA <span>(flavour)</span></div>
                 <div className="price pb-4">$28.99</div>
               </div>
             </div>
-            <div className="col-md-4 text-center pb-3">
+            <div className="col-md-3 text-center pb-3">
               <div className="flavour-box" data-aos="zoom-in"
             data-aos-duration="1500">
                 <div className="mb-3">
@@ -143,14 +144,24 @@ const Hookah = () => {
                 <div className="price pb-4">$28.99</div>
               </div>
             </div>
-            <div className="col-md-4 text-center pb-3">
+            <div className="col-md-3 text-center pb-3">
               <div className="flavour-box" data-aos="zoom-in"
             data-aos-duration="1500">
                 <div className="mb-3">
                   <img src={Flavor3} alt="Flavor" />
                 </div>
                 <div className="flavour-name pb-3">AL FAHKER <span>(flavour)</span></div>
-                <div className="price pb-4">$24.99</div>
+                <div className="price pb-4">$20.99</div>
+              </div>
+            </div>
+            <div className="col-md-3 text-center pb-3">
+              <div className="flavour-box" data-aos="zoom-in"
+            data-aos-duration="1500">
+                <div className="mb-3">
+                  <img src={Flavor4} alt="Flavor" />
+                </div>
+                <div className="flavour-name pb-3">AFZAL <span>(flavour)</span></div>
+                <div className="price pb-4">$22.99</div>
               </div>
             </div>
           </div>
