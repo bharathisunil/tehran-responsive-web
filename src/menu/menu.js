@@ -226,9 +226,11 @@ const Menu = () => {
           >
             <Accordion.Item eventKey="0">
               <Accordion.Header>
-                Full Menu{' '}
+                <span style={{paddingRight: 12}}>
+                  Full Menu{' '}
+                  </span>
                  <a className="item-name" style={{textDecoration: 'none', color: 'white', fontSize: 16,}} href="https://drive.google.com/file/d/1zWhJEE4JEfw5VMAcLXtFIN33ZSQqkauc/view?usp=sharing" target="_blank" rel='noopener noreferrer'>
-                <img src="/menu-icon.png" height={30} width={30} alt="menu icon" style={{height: 40, width: 40, resize:'contian'}} />
+                <img src="/pdf-icon.png" alt="menu icon" style={{height: 59, width: 48, resize:'contain'}} />
                    </a>
               </Accordion.Header>
             </Accordion.Item>
