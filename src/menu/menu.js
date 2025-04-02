@@ -225,15 +225,12 @@ const Menu = () => {
             className="custom-accordion"
           >
             <Accordion.Item eventKey="0">
-              <Accordion.Header>Full Menu</Accordion.Header>
-              <Accordion.Body>
-              <a className="item-name" style={{textDecoration: 'none', color: 'white', fontSize: 16,}} href="https://drive.google.com/file/d/1zWhJEE4JEfw5VMAcLXtFIN33ZSQqkauc/view?usp=sharing" target="_blank" rel='noopener noreferrer'>
+              <Accordion.Header>
+                Full Menu{' '}
+                 <a className="item-name" style={{textDecoration: 'none', color: 'white', fontSize: 16,}} href="https://drive.google.com/file/d/1zWhJEE4JEfw5VMAcLXtFIN33ZSQqkauc/view?usp=sharing" target="_blank" rel='noopener noreferrer'>
                 <img src="/menu-icon.png" height={30} width={30} alt="menu icon" style={{height: 40, width: 40, resize:'contian'}} />
-                <span style={{paddingLeft: 7}}>
-                  Click to See the Full Menu
-                  </span>
-               </a>
-              </Accordion.Body>
+                   </a>
+              </Accordion.Header>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
               <Accordion.Header>Cocktails</Accordion.Header>
