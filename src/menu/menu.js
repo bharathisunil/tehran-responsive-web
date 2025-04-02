@@ -1,20 +1,20 @@
+import Accordion from "react-bootstrap/Accordion";
+import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import Logo from "../assets/logo.svg";
 import LogoDark from "../assets/logo-dark.svg";
+import Logo from "../assets/logo.svg";
+import Cocktails from "../assets/menu/cocktail.png";
+import Drinks from "../assets/menu/drinks.png";
+import Hookah from "../assets/menu/hookah.png";
 import MenuImg1 from "../assets/menu/menu-img1.png";
 import Salad from "../assets/menu/salad.png";
-import Cocktails from "../assets/menu/cocktail.png";
 import Tapas from "../assets/menu/tapas.png";
-import Hookah from "../assets/menu/hookah.png";
-import Drinks from "../assets/menu/drinks.png";
-import "./menu.scss";
 import Contact from "../components/contact/contact";
-import Accordion from "react-bootstrap/Accordion";
+import "./menu.scss";
 
 const Menu = () => {
   return (
@@ -225,6 +225,17 @@ const Menu = () => {
             className="custom-accordion"
           >
             <Accordion.Item eventKey="0">
+              <Accordion.Header>Full Menu</Accordion.Header>
+              <Accordion.Body>
+              <a className="item-name" style={{textDecoration: 'none', color: 'white', fontSize: 16,}} href="https://drive.google.com/file/d/1zWhJEE4JEfw5VMAcLXtFIN33ZSQqkauc/view?usp=sharing" target="_blank" rel='noopener noreferrer'>
+                <img src="/menu-icon.png" height={30} width={30} alt="menu icon" style={{height: 40, width: 40, resize:'contian'}} />
+                <span style={{paddingLeft: 7}}>
+                  Click to See the Full Menu
+                  </span>
+               </a>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
               <Accordion.Header>Cocktails</Accordion.Header>
               <Accordion.Body>
                 <div className="row g-5">
@@ -343,7 +354,7 @@ const Menu = () => {
                 </div>
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="1">
+            <Accordion.Item eventKey="2">
               <Accordion.Header>Tapas</Accordion.Header>
               <Accordion.Body>
                 <div className="row gx-5">
@@ -505,7 +516,7 @@ const Menu = () => {
                 </div>
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="2">
+            <Accordion.Item eventKey="3">
               <Accordion.Header>SIDES</Accordion.Header>
               <Accordion.Body>
                 <div className="row gx-5">
@@ -555,7 +566,7 @@ const Menu = () => {
                 </div>
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="3">
+            <Accordion.Item eventKey="4">
               <Accordion.Header>Hookah</Accordion.Header>
               <Accordion.Body>
               <div className="menu-sub-title pb-4">1. CHOOSE YOUR FLAVOR</div>
@@ -684,7 +695,7 @@ const Menu = () => {
                 <div>ALL CHECKS ARE SUBJECTED TO A 18% SOCIETY FEE</div>
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="4">
+            <Accordion.Item eventKey="5">
               <Accordion.Header>Drinks</Accordion.Header>
               <Accordion.Body>
               <div className="menu-sub-title pb-4">BEER</div>
@@ -822,6 +833,7 @@ const Menu = () => {
                 </div>
               </Accordion.Body>
             </Accordion.Item>
+
           </Accordion>
           {/* <div className="row justify-content-center text-center pb-5">
             <div className="col-md-9">
