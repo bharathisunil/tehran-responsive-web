@@ -224,7 +224,7 @@ const Menu = () => {
             className="custom-accordion"
           >
             <Accordion.Item eventKey="0">
-              <a className="item-name" style={{textDecoration: 'none', color: 'white', fontSize: 16,}} href="/tehran-menu.pdf" target="_blank" rel='noopener noreferrer'>
+              <a className="item-name" style={{textDecoration: 'none', color: 'white', fontSize: 16,}} href="https://drive.google.com/file/d/1zWhJEE4JEfw5VMAcLXtFIN33ZSQqkauc/view?usp=sharing" target="_blank" rel='noopener noreferrer'>
               <Accordion.Header>
 
               <span style={{paddingRight: 12}}>
