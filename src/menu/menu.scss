@@ -166,6 +166,117 @@
 }
 
 
+.side-dishes-sec-1 {
+    background-color: #21040c;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+    .reserve-table {
+        background-color: #21040c;
+        padding: 6px;
+        margin-bottom: 100px;
+        .bg-img {
+            background-image: url(../assets/menu/reserve.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 300px;
+        }
+        .book-btn {
+            background-color: #d1b982;
+            border-color: #d1b982;
+            font-size: 20px;
+            color: #000000;
+            font-weight: 500;
+            min-width: 250px;
+            height: 60px;
+        }
+        .title {
+            font-family: "Yeseva One", serif;
+            font-size: 64px;
+            color: #ffffff;
+            line-height: 60px;
+        }
+        p {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+
+    .title2 {
+        font-family: "Yeseva One", serif;
+        font-size: 64px;
+        color: #087b6f;
+        line-height: 60px;
+    }
+    .sub-title {
+        font-family: "Yeseva One", serif;
+        font-size: 24px;
+        color: #fff;
+        overflow: hidden;
+    }
+    .sub-title::after {
+        content: "";
+        background-color: #fff;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        top: 20px;
+        margin-left: 10px;
+    }
+    .dish {
+        padding-bottom: 20px;
+        .dish-img {
+            background-color: #21040c;
+            padding: 4px;
+            border: 2px solid #6f2e40;
+            min-width: 160px;
+            height: 160px;
+        }
+        .dish-name {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            color: #fff;
+            padding-bottom: 10px;
+        }
+        p {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #fff;
+        }
+        .price {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: 32px;
+            color: #7c9aa0;
+        }
+    }
+    .menu-item {
+        font-family: "Poppins", sans-serif;
+        .item-name {
+            font-size: 24px;
+            color: #fff;
+        }
+        .item-price {
+            font-weight: 600;
+            font-size: 24px;
+        }
+        .item-description{
+            font-size: 16px;
+            color: #8A8A8A;
+        }
+    }
+    .menu-sub-title {
+        color: #D1B982;
+        font-size: 42px;
+        font-family: "Yeseva One", serif;
+    }
+}
 
 
 @media (max-width: 768px) {

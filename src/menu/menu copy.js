@@ -237,11 +237,11 @@ const Menu = () => {
           <FunctionalCarousel />
 
           <Accordion
-            defaultActiveKey="1"
+            defaultActiveKey="0"
             data-bs-theme="dark"
-            className="custom-accordion mt-4 pt-4"
+            className="custom-accordion"
           >
-            {/* <Accordion.Item eventKey="0">
+            <Accordion.Item eventKey="0">
               <a
                 className="item-name"
                 style={{ textDecoration: "none", color: "white", fontSize: 16 }}
@@ -258,8 +258,8 @@ const Menu = () => {
                   />
                 </Accordion.Header>
               </a>
-            </Accordion.Item> */}
-            <Accordion.Item eventKey="0">
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
               <Accordion.Header>Cocktails</Accordion.Header>
               <Accordion.Body>
                 <div className="row g-5">
@@ -378,7 +378,7 @@ const Menu = () => {
                 </div>
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="1">
+            <Accordion.Item eventKey="2">
               <Accordion.Header>Tapas</Accordion.Header>
               <Accordion.Body>
                 <div className="row gx-5">
@@ -540,8 +540,8 @@ const Menu = () => {
                 </div>
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="2">
-              <Accordion.Header>Sides</Accordion.Header>
+            <Accordion.Item eventKey="3">
+              <Accordion.Header>SIDES</Accordion.Header>
               <Accordion.Body>
                 <div className="row gx-5">
                   <div className="col-md-6">
@@ -593,7 +593,7 @@ const Menu = () => {
                 </div>
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="3">
+            <Accordion.Item eventKey="4">
               <Accordion.Header>Hookah</Accordion.Header>
               <Accordion.Body>
                 <div className="menu-sub-title pb-4">1. CHOOSE YOUR FLAVOR</div>
@@ -732,7 +732,7 @@ const Menu = () => {
                 <div>ALL CHECKS ARE SUBJECTED TO A 18% SOCIETY FEE</div>
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="4">
+            <Accordion.Item eventKey="5">
               <Accordion.Header>Drinks</Accordion.Header>
               <Accordion.Body>
                 <div className="menu-sub-title pb-4">BEER</div>
