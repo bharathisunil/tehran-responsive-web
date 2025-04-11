@@ -7,12 +7,15 @@ import MenuImg1 from "../assets/assets/menu01.jpg";
 import MenuImg2 from "../assets/assets/menu02.jpg";
 import MenuImg3 from "../assets/assets/menu03.jpg";
 import MenuImg4 from "../assets/assets/menu04.jpg";
+import OverlayImageViewer from "./OverlayImageViewer";
 
 const FunctionalCarousel = () => {
   const [goToSlide, setGoToSlide] = useState(0);
   const [offsetRadius] = useState(2);
   const [animationConfig] = useState(config.gentle);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [selectedImage, setSelectedImage] = useState(null);
+
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -39,6 +42,7 @@ const FunctionalCarousel = () => {
             transform: index === goToSlide ? "scale(1)" : "scale(1.1)",
             transition: "all 0.5s ease-in-out",
           }}
+          onClick={() => setSelectedImage(img)}
         >
           <img
             src={img}
@@ -64,6 +68,7 @@ const FunctionalCarousel = () => {
   }, [slides.length]);
 
   return (
+    <>
     <div
       style={{
         width: "100%",
@@ -103,6 +108,9 @@ const FunctionalCarousel = () => {
         ))}
       </div>
     </div>
+
+    <OverlayImageViewer image={selectedImage} onClose={() => setSelectedImage(null)} />
+    </>
   );
 };
 
