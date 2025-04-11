@@ -1,6 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const OverlayImageViewer = ({ image, onClose }) => {
+  useEffect(() => {
+    if (image) {
+      // Lock scroll
+      document.body.style.overflow = "hidden";
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [image]);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [onClose]);
+
   if (!image) return null;
 
   return (

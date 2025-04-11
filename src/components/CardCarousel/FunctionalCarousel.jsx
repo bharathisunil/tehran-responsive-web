@@ -72,7 +72,7 @@ const FunctionalCarousel = () => {
         style={{
           width: "100%",
           maxWidth: "900px",
-          height: windowWidth < 600 ? "600px" : "700px",
+          height: windowWidth < 600 ? "520px" : "700px",
           margin: "0 auto",
         }}
       >
