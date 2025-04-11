@@ -16,7 +16,6 @@ const FunctionalCarousel = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [selectedImage, setSelectedImage] = useState(null);
 
-
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
@@ -69,47 +68,50 @@ const FunctionalCarousel = () => {
 
   return (
     <>
-    <div
-      style={{
-        width: "100%",
-        maxWidth: "900px",
-        height: windowWidth < 600 ? "450px" : "700px",
-        margin: "0 auto",
-      }}
-    >
-      <Carousel
-        slides={slides}
-        goToSlide={goToSlide}
-        offsetRadius={offsetRadius}
-        showNavigation={false}
-        animationConfig={animationConfig}
-      />
       <div
         style={{
-          display: "flex",
-          justifyContent: "center",
-          marginTop: "20px",
-          gap: "10px",
+          width: "100%",
+          maxWidth: "900px",
+          height: windowWidth < 600 ? "600px" : "700px",
+          margin: "0 auto",
         }}
       >
-        {slides.map((_, index) => (
-          <div
-            key={index}
-            onClick={() => setGoToSlide(index)}
-            style={{
-              width: "25px",
-              height: "5px",
-              borderRadius: "12px",
-              cursor: "pointer",
-              backgroundColor: index === goToSlide ? "#D2BA83" : "#efefef",
-              transition: "background-color 0.3s",
-            }}
-          />
-        ))}
+        <Carousel
+          slides={slides}
+          goToSlide={goToSlide}
+          offsetRadius={offsetRadius}
+          showNavigation={false}
+          animationConfig={animationConfig}
+        />
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "20px",
+            gap: "10px",
+          }}
+        >
+          {slides.map((_, index) => (
+            <div
+              key={index}
+              onClick={() => setGoToSlide(index)}
+              style={{
+                width: "25px",
+                height: "5px",
+                borderRadius: "12px",
+                cursor: "pointer",
+                backgroundColor: index === goToSlide ? "#D2BA83" : "#efefef",
+                transition: "background-color 0.3s",
+              }}
+            />
+          ))}
+        </div>
       </div>
-    </div>
 
-    <OverlayImageViewer image={selectedImage} onClose={() => setSelectedImage(null)} />
+      <OverlayImageViewer
+        image={selectedImage}
+        onClose={() => setSelectedImage(null)}
+      />
     </>
   );
 };

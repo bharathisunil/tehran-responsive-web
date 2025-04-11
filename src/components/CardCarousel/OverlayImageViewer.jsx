@@ -12,11 +12,12 @@ const OverlayImageViewer = ({ image, onClose }) => {
         left: 0,
         width: "100vw",
         height: "100vh",
-        backgroundColor: "rgba(0, 0, 0, 0.8)",
+        backgroundColor: "rgba(0, 0, 0, 0.9)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         zIndex: 9999,
+        overflow: "hidden",
       }}
     >
       <img
@@ -36,8 +37,8 @@ const OverlayImageViewer = ({ image, onClose }) => {
         onClick={onClose}
         style={{
           position: "absolute",
-          top: "20px",
-          right: "10px",
+          top: "10px",
+          right: "30px",
           fontSize: "40px",
           background: "transparent",
           border: "none",

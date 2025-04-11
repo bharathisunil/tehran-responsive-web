@@ -237,7 +237,7 @@ const Menu = () => {
           <FunctionalCarousel />
 
           <Accordion
-            defaultActiveKey="1"
+            // defaultActiveKey="0"
             data-bs-theme="dark"
             className="custom-accordion mt-4 pt-4"
           >
