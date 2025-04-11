@@ -23,9 +23,11 @@ const OverlayImageViewer = ({ image, onClose }) => {
         src={image}
         alt="Enlarged"
         style={{
-          maxWidth: "90%",
-          maxHeight: "90%",
+          width: "100vw",
+          height: "100vh",
           objectFit: "contain",
+          userSelect: "none",
+          touchAction: "none",
         }}
         onClick={(e) => e.stopPropagation()}
       />
@@ -35,8 +37,8 @@ const OverlayImageViewer = ({ image, onClose }) => {
         style={{
           position: "absolute",
           top: "20px",
-          right: "30px",
-          fontSize: "30px",
+          right: "10px",
+          fontSize: "40px",
           background: "transparent",
           border: "none",
           color: "#fff",
