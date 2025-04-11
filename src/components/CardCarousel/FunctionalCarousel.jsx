@@ -12,8 +12,18 @@ const FunctionalCarousel = () => {
   const [goToSlide, setGoToSlide] = useState(0);
   const [offsetRadius] = useState(2);
   const [animationConfig] = useState(config.gentle);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  const imageList = [MenuImg1, MenuImg2, MenuImg3, MenuImg4];
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const imageWidth = windowWidth < 600 ? "90vw" : "500px";
+  //   const imageHeight = windowWidth < 600 ? "auto" : "auto";
+
+  const imageList = useMemo(() => [MenuImg1, MenuImg2, MenuImg3, MenuImg4], []);
 
   const slides = useMemo(() => {
     return imageList.map((img, index) => ({
@@ -21,7 +31,7 @@ const FunctionalCarousel = () => {
       content: (
         <div
           style={{
-            width: "500px",
+            width: imageWidth,
             height: "auto",
             overflow: "hidden",
             boxShadow: "0 30px 40px rgba(0, 0, 0, 0.5)",
@@ -43,7 +53,7 @@ const FunctionalCarousel = () => {
       ),
       onClick: () => setGoToSlide(index),
     }));
-  }, [imageList, goToSlide]);
+  }, [imageList, goToSlide, imageWidth]);
 
   useEffect(() => {
     const loop = setInterval(() => {
