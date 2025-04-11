@@ -64,7 +64,14 @@ const FunctionalCarousel = () => {
   }, [slides.length]);
 
   return (
-    <div style={{ width: "70%", height: "700px", margin: "0 auto" }}>
+    <div
+      style={{
+        width: "100%",
+        maxWidth: "900px",
+        height: windowWidth < 600 ? "450px" : "700px",
+        margin: "0 auto",
+      }}
+    >
       <Carousel
         slides={slides}
         goToSlide={goToSlide}
