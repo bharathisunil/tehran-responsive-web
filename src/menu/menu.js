@@ -68,7 +68,7 @@ const Menu = () => {
       <section
         className="inner-banner d-flex justify-content-center align-items-center py-3"
         style={{
-          backgroundImage: `url(${require("../assets/menu/banner.jpg")})`,
+          backgroundImage: `url(${require("../assets/menu/menu-bg-img.png")})`,
         }}
       >
         <Container className="text-center">
