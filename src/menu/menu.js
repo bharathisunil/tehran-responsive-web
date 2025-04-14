@@ -75,11 +75,11 @@ const Menu = () => {
           <h1 data-aos="fade-down" data-aos-duration="1500">
             MENU
           </h1>
-          <div className="sub-text" data-aos="zoom-in" data-aos-duration="1500">
+          {/* <div className="sub-text" data-aos="zoom-in" data-aos-duration="1500">
             Experience the rich flavors of shisha tobacco in a vibrant and
             welcoming atmosphere at our hookah lounge, perfect for socializing
             and relaxation.
-          </div>
+          </div> */}
         </Container>
       </section>
       <section className="our-selection-sec pt-5 position-relative">
@@ -212,28 +212,6 @@ const Menu = () => {
 
       <section className="side-dishes-sec">
         <Container>
-          <div
-            className="reserve-table"
-            data-aos="zoom-in"
-            data-aos-duration="1500"
-          >
-            <div className="bg-img text-center d-flex align-items-center justify-content-center">
-              <div>
-                <div className="title pb-4">Reserve a table</div>
-                <p>
-                  Indulge in culinary excellence with us; your reservation is
-                  the gateway to an unforgettable dining adventure.
-                </p>
-                <Button
-                  variant="primary"
-                  className="book-btn mt-3 d-inline-flex justify-content-center align-items-center"
-                  href="/book-table"
-                >
-                  Book a Table
-                </Button>
-              </div>
-            </div>
-          </div>
           <FunctionalCarousel />
 
           <Accordion
@@ -585,7 +563,7 @@ const Menu = () => {
                     </div>
                   </div>
                   <div className="col-12 menu-item">
-                    <div className="item-description">
+                    <div className="item-description" style={{color: '#de573c'}}>
                       ALL CHECKS ARE SUBJECTED TO A 18% SOCIETY FEE(keep this
                       line on center)
                     </div>
@@ -903,6 +881,30 @@ const Menu = () => {
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
+
+          <div
+            className="reserve-table"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            style={{marginTop: '5rem'}}
+          >
+            <div className="bg-img text-center d-flex align-items-center justify-content-center">
+              <div>
+                <div className="title pb-4">Reserve a table</div>
+                <p>
+                  Indulge in culinary excellence with us; your reservation is
+                  the gateway to an unforgettable dining adventure.
+                </p>
+                <Button
+                  variant="primary"
+                  className="book-btn mt-3 d-inline-flex justify-content-center align-items-center"
+                  href="/book-table"
+                >
+                  Book a Table
+                </Button>
+              </div>
+            </div>
+          </div>
           {/* <div className="row justify-content-center text-center pb-5">
             <div className="col-md-9">
               <div className="title2">
@@ -1023,7 +1025,7 @@ const Menu = () => {
           </div> */}
         </Container>
       </section>
-{/* 
+      {/* 
       <section className="side-dishes-sec-1">
         <div
           className="reserve-table"
